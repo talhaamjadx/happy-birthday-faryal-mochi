@@ -2,7 +2,7 @@
   <div id="app">
     <div
       style="height: 100vh; display:flex; justify-content:center; align-items:center"
-      v-if="check"
+      
     >
       <section
         style="display: flex; flex-direction: column; align-items:center"
@@ -33,7 +33,7 @@
         <h1>{{ seconds }}</h1>
       </section>
     </div>
-    <div v-else>
+    <div>
       <music-comp
         :myAudio="myAudio"
         @isPlaying="isPlaying = $event"
