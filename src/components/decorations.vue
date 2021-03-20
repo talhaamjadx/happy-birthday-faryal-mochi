@@ -1232,10 +1232,10 @@ export default {
       if (this.a == "Blow Candles!") {
         this.interval = setInterval(() => {
         if(this.audio){
-          if(this.audio.currentTime == 0){
-            clearInterval(this.interval)
-            this.myAudio = null
-          }
+          // if(this.audio.currentTime == 0){
+          //   clearInterval(this.interval)
+          //   this.myAudio = null
+          // }
           if(this.audio.currentTime.toFixed(0) == 17){
             this.$store.commit('setCurrentLyrics', this.lyrics[0])
           }
@@ -1352,6 +1352,8 @@ export default {
         this.$emit("audio", this.audio);
         this.player.pause();
       } else {
+        clearInterval(this.interval)
+        this.myAudio = null
         this.$store.commit('setCurrentLyrics', '')
         this.a = "Blow Candles!";
         this.audio.load();
