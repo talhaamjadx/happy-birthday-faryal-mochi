@@ -1344,7 +1344,7 @@ export default {
           else if(this.audio.currentTime.toFixed(0) == 242){
             clearInterval(this.interval)
           }
-          // console.log(this.audio.currentTime.toFixed(0))
+          console.log(this.audio.currentTime.toFixed(0))
         }
       },1000)
         this.a = "Light it up again!";
