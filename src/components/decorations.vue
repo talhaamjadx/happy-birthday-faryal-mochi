@@ -1377,6 +1377,12 @@ export default {
     },
   },
   created() {
+    let image1 = new Image()
+    image1.src = '.././assets/confetti.gif'
+    let image2 = new Image()
+    image2.src = '.././assets/balloon1.png'
+    let image3 = new Image()
+    image3.src = '.././assets/balloon2.png'
     this.audio = new Audio(this.path);
     this.audio.preload = 'auto'
   },
