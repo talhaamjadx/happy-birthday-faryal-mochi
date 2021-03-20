@@ -5,23 +5,16 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    count: 0,
-    currentLyrics: "",
+    currentLyrics: "*main chorus*",
   },
   mutations: {
-    increment (state) {
-      state.count++
-    },
-    setAudio (state, payload){
-        state.audio = payload
+    setCurrentLyrics(state, payload){
+        state.currentLyrics = payload
     }
   },
   getters:{
-      getIncrement(state){
-          return state.count
-      },
-      getAudio(state){
-          return state.audio
+      getCurrentLyrics(state){
+          return state.currentLyrics
       }
   }
 })

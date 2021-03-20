@@ -8,28 +8,12 @@
     <nav class="fixed-bottom nav2" v-else>
       <v-card outlined tile dark id="card1">
         <section class="player">
-          <p>{{ count }}</p>
           <!-- <h2>{{ current.title }} - {{ current.artist }}</h2> -->
         </section>
         <div class="control">
-          <v-btn @click="prev" icon x-large>
-            <v-icon id="icon1">skip_previous</v-icon>
-          </v-btn>
-          <v-btn icon class="ml-4" v-if="!isPlaying" @click="play" x-large>
-            <v-icon id="icon1">play_arrow</v-icon>
-          </v-btn>
-          <v-btn class="ml-4" v-else @click="pause" icon x-large>
-            <v-icon id="icon1">pause</v-icon>
-          </v-btn>
-          <v-btn class="ml-4" @click="next" icon x-large>
-            <v-icon id="icon1">skip_next</v-icon>
-          </v-btn>
-          <v-btn icon x-large @click="check = !check" class="ml-5">
-            <v-icon id="icon1">queue_music</v-icon>
-          </v-btn>
-          <v-btn icon x-large @click="check1 = !check1" class="ml-5">
-            <v-icon id="icon1">keyboard_arrow_down</v-icon>
-          </v-btn>
+          <v-icon>mdi-music-note-eighth</v-icon>
+          <h1>{{ currentLyrics }}</h1>
+          <v-icon>mdi-music-note-eighth</v-icon>
         </div>
         <section class="playlist" v-if="!check">
           <h2>Playlist</h2>
@@ -56,7 +40,7 @@ export default {
   props: ["myAudio"],
   computed:{
     ...mapGetters({
-      count: 'getIncrement'
+      currentLyrics: 'getCurrentLyrics'
     })
   },
   data() {
@@ -163,11 +147,13 @@ header {
   height: 120px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .playlist {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 .song-playing {
   background-color: #f0f0f0;
