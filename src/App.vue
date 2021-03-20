@@ -112,6 +112,11 @@ export default {
       }
     },
   },
+  watch:{
+    myAudio(){
+      console.log("here")
+    }
+  },
   created() {
     console.log("testing...")
     setInterval(this.CountdownClock, 0);

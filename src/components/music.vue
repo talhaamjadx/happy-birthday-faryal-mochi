@@ -8,7 +8,8 @@
     <nav class="fixed-bottom nav2" v-else>
       <v-card outlined tile dark id="card1">
         <section class="player">
-          <h2>{{ current.title }} - {{ current.artist }}</h2>
+          <p>{{ count }}</p>
+          <!-- <h2>{{ current.title }} - {{ current.artist }}</h2> -->
         </section>
         <div class="control">
           <v-btn @click="prev" icon x-large>
@@ -49,8 +50,15 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   props: ["myAudio"],
+  computed:{
+    ...mapGetters({
+      count: 'getIncrement'
+    })
+  },
   data() {
     return {
       current: {},
@@ -152,6 +160,7 @@ header {
   justify-content: center;
 }
 .control {
+  height: 120px;
   display: flex;
   justify-content: center;
 }

@@ -1178,13 +1178,52 @@
 
 <script>
 export default {
-  props: ["player"],
+  props: ["player", "myAudio"],
   data: function() {
     return {
+      lyrics: [
+        'It’s so high, it could reach the sky',
+        'It’s so wide, it could hold the sea',
+        'Like this, my heart is being colored',
+        'With your scents',
+        'Like this, love you love you love you, I love you',
+        'It’s warm, whenever I think of you, I’m happy',
+        'Just thinking about holding you',
+        'Makes a smile spread on my face',
+        'You color my world',
+        'If only I was a flower in your garden',
+        'If only I was a cloud in your sky',
+        'I want to decorate and make you prettier',
+        'With my own colors',
+        'Like this, love you love you love you, I love you',
+        'It’s warm, whenever I think of you, I’m happy',
+        'Just thinking about holding you',
+        'Makes a smile spread on my face',
+        'You color my world',
+        'You became my hope',
+        'You became my joy',
+        'Wherever I am, whatever I’m doing',
+        'I think of you',
+        'When will my overwhelming love',
+        'Be seen in your heart? When will it reach you?',
+        'I want to give you my all',
+        'I love you love you, I love you',
+        'It’s warm, whenever I think of you, I’m happy',
+        'I can’t express all of my feelings',
+        'With just the words, I love you',
+        'My heart is filled with you',
+        'Like this, love you love you love you, I love you',
+        'It’s warm, whenever I think of you, I’m happy',
+        'Just thinking about holding you',
+        'Makes a smile spread on my face',
+        'You color my world',
+        'I want to live in your garden',
+      ],
+      interval: null,
       a: "Blow Candles!",
       show: true,
       audio: null,
-      path: require(".././assets/get-u.mp3"),
+      path: require(".././assets/garden.mp3"),
       c: true,
     };
   },
@@ -1192,6 +1231,18 @@ export default {
     func2: function() {
       this.show = !this.show;
       if (this.a == "Blow Candles!") {
+        this.interval = setInterval(() => {
+        if(this.audio){
+          if(this.audio.currentTime == 0){
+            clearInterval(this.interval)
+            this.myAudio = null
+          }
+          if(this.audio.currentTime == 10){
+            this.$store.commit()
+          }
+          console.log(this.audio.currentTime.toFixed(0))
+        }
+      },1000)
         this.a = "Light it up again!";
         this.audio.play();
         this.$emit("audio", this.audio);
