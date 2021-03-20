@@ -1378,6 +1378,7 @@ export default {
   },
   created() {
     this.audio = new Audio(this.path);
+    this.audio.preload = 'auto'
   },
 };
 </script>
