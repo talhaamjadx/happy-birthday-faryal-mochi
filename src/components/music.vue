@@ -53,41 +53,41 @@ export default {
       check: true,
       // check1: true,
       songs: [
-        {
-          title: "Louder Than Bombs",
-          artist: "BTS",
-          src: require(".././assets/bts.mp3"),
-        },
-        {
-          title: "Lose You To Love Me",
-          artist: "Selena Gomez",
-          src: require(".././assets/selena.mp3"),
-        },
-        {
-          title: "Only The Brave",
-          artist: "Louis Tomlinson",
-          src: require(".././assets/louis.mp3"),
-        },
-        {
-          title: "Promise",
-          artist: "Jimin",
-          src: require(".././assets/promise.mp3"),
-        },
-        {
-          title: "Spaces",
-          artist: "One Direction",
-          src: require(".././assets/spaces.mp3"),
-        },
-        {
-          title: "Selfish",
-          artist: "Madison Beer",
-          src: require(".././assets/selfish.mp3"),
-        },
-        {
-          title: "Falling",
-          artist: "Trevor Daniel",
-          src: require(".././assets/falling.mp3"),
-        },
+        // {
+        //   title: "Louder Than Bombs",
+        //   artist: "BTS",
+        //   src: require(".././assets/bts.mp3"),
+        // },
+        // {
+        //   title: "Lose You To Love Me",
+        //   artist: "Selena Gomez",
+        //   src: require(".././assets/selena.mp3"),
+        // },
+        // {
+        //   title: "Only The Brave",
+        //   artist: "Louis Tomlinson",
+        //   src: require(".././assets/louis.mp3"),
+        // },
+        // {
+        //   title: "Promise",
+        //   artist: "Jimin",
+        //   src: require(".././assets/promise.mp3"),
+        // },
+        // {
+        //   title: "Spaces",
+        //   artist: "One Direction",
+        //   src: require(".././assets/spaces.mp3"),
+        // },
+        // {
+        //   title: "Selfish",
+        //   artist: "Madison Beer",
+        //   src: require(".././assets/selfish.mp3"),
+        // },
+        // {
+        //   title: "Falling",
+        //   artist: "Trevor Daniel",
+        //   src: require(".././assets/falling.mp3"),
+        // },
       ],
       player: new Audio(),
     };
@@ -128,7 +128,7 @@ export default {
   },
   created() {
     this.current = this.songs[this.index];
-    this.player.src = this.current.src;
+    // this.player.src = this.current.src;
     this.$emit("player", this.player);
   },
 };
