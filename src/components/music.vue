@@ -1,18 +1,18 @@
 <template>
   <div>
-    <nav class="fixed-top nav1" v-if="check1">
+    <nav class="fixed-top nav1" v-if="false">
       <v-btn icon @click="check1 = !check1">
         <v-icon id="icon1">keyboard_arrow_up</v-icon>
       </v-btn>
     </nav>
-    <nav class="fixed-bottom nav2" v-else>
-      <v-card outlined tile dark id="card1">
+    <nav class="fixed-bottom nav2" v-if="check1">
+      <v-card id="card1">
         <section class="player">
           <!-- <h2>{{ current.title }} - {{ current.artist }}</h2> -->
         </section>
         <div class="control">
           <v-icon>mdi-music-note-eighth</v-icon>
-          <h1>{{ currentLyrics }}</h1>
+          <center><h1>{{ currentLyrics }}</h1></center>
           <v-icon>mdi-music-note-eighth</v-icon>
         </div>
         <section class="playlist" v-if="!check">
@@ -37,10 +37,12 @@
 import { mapGetters } from "vuex";
 
 export default {
-  props: ["myAudio"],
+  // props: ["myAudio"],
   computed:{
     ...mapGetters({
-      currentLyrics: 'getCurrentLyrics'
+      currentLyrics: 'getCurrentLyrics',
+      check1: 'getCheck1',
+      myAudio: 'getMyAudio'
     })
   },
   data() {
@@ -49,7 +51,7 @@ export default {
       index: 0,
       isPlaying: false,
       check: true,
-      check1: true,
+      // check1: true,
       songs: [
         {
           title: "Louder Than Bombs",
@@ -162,6 +164,10 @@ header {
 .nav1 {
   display: flex;
   justify-content: center;
+}
+
+#card1{
+  background-image: radial-gradient(ellipse at top, rgba(191,191,191,0.5) 100px, black);
 }
 
 @media only screen and (max-width: 720px) {

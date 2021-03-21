@@ -1230,6 +1230,7 @@ export default {
     func2: function() {
       this.show = !this.show;
       if (this.a == "Blow Candles!") {
+        this.$store.commit('setCheck1', true)
         this.interval = setInterval(() => {
         if(this.audio){
           // if(this.audio.currentTime == 0){
@@ -1344,17 +1345,19 @@ export default {
           else if(this.audio.currentTime.toFixed(0) == 242){
             clearInterval(this.interval)
           }
-          console.log(this.audio.currentTime.toFixed(0))
+          // console.log(this.audio.currentTime.toFixed(0))
         }
       },1000)
         this.a = "Light it up again!";
         this.audio.play();
-        this.$emit("audio", this.audio);
+        // this.$emit("audio", this.audio);
+        this.$store.commit('setMyAudio', this.audio)
         this.player.pause();
       } else {
         clearInterval(this.interval)
-        this.myAudio = null
-        this.$store.commit('setCurrentLyrics', '')
+        this.$store.commit('setCheck1', false)
+        this.$store.commit('setMyAudio', null)
+        this.$store.commit('setCurrentLyrics', "I can't sing but I guess this explains what i wanna say, So here it goes...")
         this.a = "Blow Candles!";
         this.audio.load();
       }
