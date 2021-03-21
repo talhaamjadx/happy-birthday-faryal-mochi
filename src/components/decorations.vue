@@ -1222,7 +1222,7 @@ export default {
       a: "Blow Candles!",
       show: true,
       audio: null,
-      path: require("../../public/garden.mp3"),
+      path: 'https://ia601504.us.archive.org/21/items/garden_202103/garden.mp3',
       c: true,
     };
   },
