@@ -6,7 +6,7 @@
       </v-btn>
     </nav>
     <nav class="fixed-bottom nav2" v-if="check1">
-      <v-card id="card1">
+      <v-card color="rgb(255, 255, 255, 0.7)" tile id="card1">
         <section class="player">
           <!-- <h2>{{ current.title }} - {{ current.artist }}</h2> -->
         </section>
@@ -168,14 +168,18 @@ header {
 
 #card1{
   background-image: radial-gradient(ellipse at top, rgba(191,191,191,0.5) 100px, black);
+  /* color: #ffb5b5; */
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 667px) {
   /* #card1{
-    height: 150px;
+    height: 100px;
   } */
   #card1 h2 {
     font-size: 40px;
+  }
+  #card1 h1 {
+    /* color: white; */
   }
   #icon1 {
     font-size: 60px;

@@ -83,7 +83,7 @@ h1 {
   background-color: red;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 667px) {
   .hello {
     animation-name: fade_in;
     animation-duration: 1.5s;

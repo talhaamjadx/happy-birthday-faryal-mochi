@@ -140,7 +140,7 @@ export default {
   padding: 0;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 667px) {
   h1 {
     font-size: 20px;
   }

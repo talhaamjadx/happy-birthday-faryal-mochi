@@ -1464,7 +1464,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 667px) {
   h1 {
     font-size: 60px;
   }
@@ -1511,7 +1511,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 667px) {
   h1 {
     font-size: 30px;
   }
