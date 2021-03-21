@@ -1222,7 +1222,7 @@ export default {
       a: "Blow Candles!",
       show: true,
       audio: null,
-      path: require(".././assets/garden.mp3"),
+      path: require("../../public/garden.mp3"),
       c: true,
     };
   },
