@@ -3,7 +3,7 @@
     <div id="div1">
       <img
         id="img2"
-        v-show="!show"
+        v-if="!show"
         style="position:absolute"
         src=".././assets/confetti.gif"
         alt="confetti"
@@ -1154,7 +1154,7 @@
     <transition @after-enter="afterEnter" :css="c">
       <img
         class="img1"
-        v-show="!show"
+        v-if="!show"
         style="position:absolute;"
         src=".././assets/balloon1.png"
         alt="balloon"
@@ -1165,7 +1165,7 @@
     <transition @after-enter="afterEnter2" :css="c">
       <img
         class="img1"
-        v-show="!show"
+        v-if="!show"
         style="position:absolute;right:0px;"
         src=".././assets/balloon2.png"
         alt="balloon"
