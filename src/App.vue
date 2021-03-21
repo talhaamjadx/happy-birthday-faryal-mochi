@@ -119,7 +119,6 @@ export default {
     }
   },
   created() {
-    console.log("testing...")
     setInterval(this.CountdownClock, 0);
   },
   components: {

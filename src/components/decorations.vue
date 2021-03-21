@@ -1222,7 +1222,7 @@ export default {
       a: "Blow Candles!",
       show: true,
       audio: null,
-      path: 'https://ia601504.us.archive.org/21/items/garden_202103/garden.mp3',
+      path: require('../assets/garden.mp3'),
       c: true,
     };
   },
@@ -1389,6 +1389,7 @@ export default {
     // let image3 = new Image()
     // image3.src = require('.././assets/balloon2.png')
     this.audio = new Audio(this.path);
+    this.audio.load()
     this.audio.preload = 'auto'
   },
 };
