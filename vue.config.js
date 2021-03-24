@@ -1,17 +1,14 @@
-// const PreloadWebpackPlugin = require('preload-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin'); 
-
+// vue.config.js
 module.exports = {
-    configureWebpack: {
-        // entry: "./src/components/decorations.vue",
-        // plugins:[
-        //     // new HtmlWebpackPlugin(),
-        //     new PreloadWebpackPlugin({
-        //         rel: 'preload',
-        //         as: 'script'
-        //     })
-        // ]
+    chainWebpack: config => {  
+      // or:
+      // modify its options:
+      config.plugin('preload').tap(options => {
+        option = {
+            rel: 'preload',
+            as: 'audio'
+        }
+        return options
+      })
     }
-}
-
-console.log("ere")
+  }
