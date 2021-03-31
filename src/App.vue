@@ -122,7 +122,7 @@ export default {
   created() {
     // const audioContext = new AudioContext();
     const pItem = AsyncPreloader.loadAudio({
-      src: "./assets/garden.mp3",
+      src: "@/assets/garden.mp3",
       body: "arrayBuffer",
     });
     pItem.then(item => console.log({item}))
