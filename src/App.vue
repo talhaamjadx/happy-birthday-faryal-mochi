@@ -59,6 +59,7 @@ import fourth from "./components/fourth.vue";
 import music from "./components/music.vue";
 import third from "./components/third.vue";
 import fifth from "./components/fifth.vue";
+import AsyncPreloader from "async-preloader"; 
 
 export default {
   data: function() {
@@ -119,6 +120,12 @@ export default {
     }
   },
   created() {
+    // const audioContext = new AudioContext();
+    const pItem = AsyncPreloader.loadAudio({
+      src: "./assets/garden.mp3",
+      body: "arrayBuffer",
+    });
+    pItem.then(item => console.log({item}))
     setInterval(this.CountdownClock, 0);
   },
   components: {
