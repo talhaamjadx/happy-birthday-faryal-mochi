@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <section v-lazyload :data-url="require('.././assets/bts1.jpg')">
       <div
         style="background-color: rgba(0,0,0,0.5); padding: 10px 10px 10px 10px"
       >
@@ -49,7 +49,7 @@ export default {
 section {
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(".././assets/bts1.jpg");
+  /* background-image: url(".././assets/bts1.jpg"); */
   background-position: cover;
   background-size: cover;
   display: flex;
@@ -89,7 +89,7 @@ h1 {
   section {
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(".././assets/bts2.jpg");
+  /* background-image: url(".././assets/bts2.jpg"); */
   background-position: cover;
   background-size: cover;
   display: flex;
