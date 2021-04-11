@@ -48,6 +48,7 @@
       <third-comp></third-comp>
       <fourth-comp></fourth-comp>
       <fifth-comp></fifth-comp>
+      <heart></heart>
     </div>
   </div>
 </template>
@@ -59,6 +60,7 @@ import fourth from "./components/fourth.vue";
 import music from "./components/music.vue";
 import third from "./components/third.vue";
 import fifth from "./components/fifth.vue";
+import heart from "./components/heart.vue";
 import AsyncPreloader from "async-preloader"; 
 
 export default {
@@ -129,6 +131,7 @@ export default {
     setInterval(this.CountdownClock, 0);
   },
   components: {
+    heart,
     "second-comp": second,
     "decoration-comp": decoration,
     "fourth-comp": fourth,
