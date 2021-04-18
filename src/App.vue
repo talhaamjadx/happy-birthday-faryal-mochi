@@ -48,6 +48,17 @@
       <third-comp></third-comp>
       <fourth-comp></fourth-comp>
       <fifth-comp></fifth-comp>
+      <lotbs></lotbs>
+      <dots></dots>
+      <hdl></hdl>
+      <mlfts></mlfts>
+      <memes></memes>
+      <chats></chats>
+      <flirting></flirting>
+      <sticker></sticker>
+      <mtalha-789></mtalha-789>
+      <comic></comic>
+      <inlaws></inlaws>
       <heart></heart>
     </div>
   </div>
@@ -60,6 +71,17 @@ import fourth from "./components/fourth.vue";
 import music from "./components/music.vue";
 import third from "./components/third.vue";
 import fifth from "./components/fifth.vue";
+import lotbs from "./components/lotbs.vue";
+import dots from "./components/dots.vue";
+import hdl from "./components/hdl.vue";
+import mlfts from "./components/mlfts.vue";
+import memes from "./components/memes.vue";
+import chats from "./components/chats.vue";
+import flirting from "./components/flirting.vue";
+import sticker from "./components/sticker.vue";
+import mtalha789 from "./components/mtalha789.vue";
+import comic from "./components/comic.vue";
+import inlaws from "./components/inlaws.vue";
 import heart from "./components/heart.vue";
 import AsyncPreloader from "async-preloader"; 
 
@@ -131,6 +153,17 @@ export default {
     setInterval(this.CountdownClock, 0);
   },
   components: {
+    inlaws,
+    comic,
+    mtalha789,
+    sticker,
+    flirting,
+    chats,
+    memes,
+    mlfts,
+    hdl,
+    dots,
+    lotbs,
     heart,
     "second-comp": second,
     "decoration-comp": decoration,
