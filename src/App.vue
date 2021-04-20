@@ -83,7 +83,7 @@ import mtalha789 from "./components/mtalha789.vue";
 import comic from "./components/comic.vue";
 import inlaws from "./components/inlaws.vue";
 import heart from "./components/heart.vue";
-import AsyncPreloader from "async-preloader"; 
+
 
 export default {
   data: function() {
@@ -144,12 +144,6 @@ export default {
     }
   },
   created() {
-    // const audioContext = new AudioContext();
-    const pItem = AsyncPreloader.loadAudio({
-      src: require("./assets/garden.mp3"),
-      body: "arrayBuffer",
-    });
-    pItem.then(item => console.log({item}))
     setInterval(this.CountdownClock, 0);
   },
   components: {
