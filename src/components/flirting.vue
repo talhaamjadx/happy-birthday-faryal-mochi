@@ -1,41 +1,94 @@
 <template>
-    <div class="container">
-        <div class="image">
-            <img class="image1" v-lazyload :data-url="require('../assets/flirting/1.jpg')" alt="">
-            <img class="image2" v-lazyload :data-url="require('../assets/flirting/2.jpeg')" alt="">
-            <img class="image3" v-lazyload :data-url="require('../assets/flirting/3.jpg')" alt="">
-            <img class="image4" v-lazyload :data-url="require('../assets/flirting/4.jpg')" alt="">
-            <img class="image5" v-lazyload :data-url="require('../assets/flirting/5.jpg')" alt="">
-            <img class="image6" v-lazyload :data-url="require('../assets/flirting/6.jpg')" alt="">
-            <img class="image7" v-lazyload :data-url="require('../assets/flirting/7.jpg')" alt="">
-        </div>
+  <div class="container">
+    <div class="image">
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image1"
+          v-lazyload
+          :data-url="require('../assets/flirting/1.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image2"
+          v-lazyload
+          :data-url="require('../assets/flirting/2.jpeg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image3"
+          v-lazyload
+          :data-url="require('../assets/flirting/3.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image4"
+          v-lazyload
+          :data-url="require('../assets/flirting/4.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image5"
+          v-lazyload
+          :data-url="require('../assets/flirting/5.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image6"
+          v-lazyload
+          :data-url="require('../assets/flirting/6.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image7"
+          v-lazyload
+          :data-url="require('../assets/flirting/7.jpg')"
+          alt=""
+        />
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style scoped>
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-    padding: 0;
-    display: flex;
+.container {
+  padding: 0;
+  display: flex;
 }
 
-.image{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-basis: 100%;
+.image {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 100%;
 }
 
 .image1,
@@ -44,11 +97,9 @@ export default {
 .image4,
 .image5,
 .image6,
-.image7
-{
-   object-fit: cover;
-   max-height: 100%;
-   max-width: 100%;
+.image7 {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
-
 </style>

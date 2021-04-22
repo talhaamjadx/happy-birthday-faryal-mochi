@@ -4,6 +4,7 @@ import vuetify from '@/plugins/vuetify'
 import ScrollMagic from "vue-scrollmagic"
 import lazyLoading from "./directives/lazyLoading"
 import store from "./store"
+import "@/assets/styles.css"
 Vue.use(ScrollMagic)
 
 Vue.directive('lazyload', lazyLoading)

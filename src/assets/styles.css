@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-over {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    min-width: 100%;
+}
