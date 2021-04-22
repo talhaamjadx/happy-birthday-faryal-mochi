@@ -1177,7 +1177,6 @@
 </template>
 
 <script>
-import AsyncPreloader from "async-preloader"; 
 export default {
   props: ["player", "myAudio"],
   data: function() {
@@ -1229,154 +1228,139 @@ export default {
   },
   methods: {
     func2: function() {
-      var source;
-    const audioContext = new AudioContext();
-    source = audioContext.createBufferSource();
-    const pItem = AsyncPreloader.loadAudio({
-      src: require("../assets/garden.mp3"),
-      body: "arrayBuffer",
-    });
-    pItem.then(item => {
-        audioContext.decodeAudioData(item).then(decodedData => {
-          source.buffer = decodedData;
-          source.connect(audioContext.destination);
-          source.loop = true;
-          source.start(0)
-        })
-    })
-      // this.show = !this.show;
-      // if (this.a == "Blow Candles!") {
-      //   this.$store.commit('setCheck1', true)
-      //   this.interval = setInterval(() => {
-      //   if(this.audio){
-      //     // if(this.audio.currentTime == 0){
-      //     //   clearInterval(this.interval)
-      //     //   this.myAudio = null
-      //     // }
-      //     if(this.audio.currentTime.toFixed(0) == 17){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[0])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 25){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[1])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 33){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[2])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 40){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[3])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 47){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[4])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 55){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[5])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 63){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[6])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 67){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[7])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 72){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[8])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 79){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[9])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 87){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[10])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 95){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[11])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 103){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[12])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 109){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[13])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 117){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[14])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 125){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[15])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 129){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[16])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 134){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[17])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 138){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[18])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 147){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[19])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 150){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[20])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 153){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[21])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 158){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[22])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 165){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[23])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 172){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[24])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 179){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[25])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 186){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[26])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 191){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[27])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 196){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[28])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 199){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[29])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 206){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[30])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 214){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[31])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 218){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[32])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 223){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[33])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 231){
-      //       this.$store.commit('setCurrentLyrics', this.lyrics[34])
-      //     }
-      //     else if(this.audio.currentTime.toFixed(0) == 242){
-      //       clearInterval(this.interval)
-      //     }
-      //     // console.log(this.audio.currentTime.toFixed(0))
-      //   }
-      // },1000)
-      //   this.a = "Light it up again!";
-      //   this.audio.play();
-      //   // this.$emit("audio", this.audio);
-      //   this.$store.commit('setMyAudio', this.audio)
-      //   this.player.pause();
-      // } else {
-      //   clearInterval(this.interval)
-      //   this.$store.commit('setCheck1', false)
-      //   this.$store.commit('setMyAudio', null)
-      //   this.$store.commit('setCurrentLyrics', "I can't sing but I guess this explains what i wanna say, So here it goes...")
-      //   this.a = "Blow Candles!";
-      //   this.audio.load();
-      // }
+      this.show = !this.show;
+      if (this.a == "Blow Candles!") {
+        this.$store.commit('setCheck1', true)
+        this.interval = setInterval(() => {
+        if(this.audio){
+          // if(this.audio.currentTime == 0){
+          //   clearInterval(this.interval)
+          //   this.myAudio = null
+          // }
+          if(this.audio.currentTime.toFixed(0) == 17){
+            this.$store.commit('setCurrentLyrics', this.lyrics[0])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 25){
+            this.$store.commit('setCurrentLyrics', this.lyrics[1])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 33){
+            this.$store.commit('setCurrentLyrics', this.lyrics[2])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 40){
+            this.$store.commit('setCurrentLyrics', this.lyrics[3])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 47){
+            this.$store.commit('setCurrentLyrics', this.lyrics[4])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 55){
+            this.$store.commit('setCurrentLyrics', this.lyrics[5])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 63){
+            this.$store.commit('setCurrentLyrics', this.lyrics[6])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 67){
+            this.$store.commit('setCurrentLyrics', this.lyrics[7])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 72){
+            this.$store.commit('setCurrentLyrics', this.lyrics[8])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 79){
+            this.$store.commit('setCurrentLyrics', this.lyrics[9])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 87){
+            this.$store.commit('setCurrentLyrics', this.lyrics[10])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 95){
+            this.$store.commit('setCurrentLyrics', this.lyrics[11])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 103){
+            this.$store.commit('setCurrentLyrics', this.lyrics[12])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 109){
+            this.$store.commit('setCurrentLyrics', this.lyrics[13])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 117){
+            this.$store.commit('setCurrentLyrics', this.lyrics[14])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 125){
+            this.$store.commit('setCurrentLyrics', this.lyrics[15])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 129){
+            this.$store.commit('setCurrentLyrics', this.lyrics[16])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 134){
+            this.$store.commit('setCurrentLyrics', this.lyrics[17])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 138){
+            this.$store.commit('setCurrentLyrics', this.lyrics[18])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 147){
+            this.$store.commit('setCurrentLyrics', this.lyrics[19])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 150){
+            this.$store.commit('setCurrentLyrics', this.lyrics[20])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 153){
+            this.$store.commit('setCurrentLyrics', this.lyrics[21])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 158){
+            this.$store.commit('setCurrentLyrics', this.lyrics[22])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 165){
+            this.$store.commit('setCurrentLyrics', this.lyrics[23])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 172){
+            this.$store.commit('setCurrentLyrics', this.lyrics[24])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 179){
+            this.$store.commit('setCurrentLyrics', this.lyrics[25])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 186){
+            this.$store.commit('setCurrentLyrics', this.lyrics[26])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 191){
+            this.$store.commit('setCurrentLyrics', this.lyrics[27])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 196){
+            this.$store.commit('setCurrentLyrics', this.lyrics[28])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 199){
+            this.$store.commit('setCurrentLyrics', this.lyrics[29])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 206){
+            this.$store.commit('setCurrentLyrics', this.lyrics[30])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 214){
+            this.$store.commit('setCurrentLyrics', this.lyrics[31])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 218){
+            this.$store.commit('setCurrentLyrics', this.lyrics[32])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 223){
+            this.$store.commit('setCurrentLyrics', this.lyrics[33])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 231){
+            this.$store.commit('setCurrentLyrics', this.lyrics[34])
+          }
+          else if(this.audio.currentTime.toFixed(0) == 242){
+            clearInterval(this.interval)
+          }
+          // console.log(this.audio.currentTime.toFixed(0))
+        }
+      },1000)
+        this.a = "Light it up again!";
+        this.audio.play();
+        // this.$emit("audio", this.audio);
+        this.$store.commit('setMyAudio', this.audio)
+        this.player.pause();
+      } else {
+        clearInterval(this.interval)
+        this.$store.commit('setCheck1', false)
+        this.$store.commit('setMyAudio', null)
+        this.$store.commit('setCurrentLyrics', "I can't sing but I guess this explains what i wanna say, So here it goes...")
+        this.a = "Blow Candles!";
+        this.audio.load();
+      }
     },
     afterEnter: function(el) {
       el.style.transform = "rotateZ(50deg)";
