@@ -68,7 +68,7 @@
         onclick="blur()"
         :class="['accordion', this['panel1'] ? 'active' : '']"
       >
-        Section 1
+        Happy Birthday
       </button>
       <div ref="panel1" class="panel">
         <second-comp></second-comp>
@@ -78,7 +78,7 @@
         onclick="blur()"
         :class="['accordion', this['panel2'] ? 'active' : '']"
       >
-        Section 2
+        BTS
       </button>
       <div ref="panel2" class="panel">
         <third-comp></third-comp>
@@ -88,7 +88,7 @@
         onclick="blur()"
         :class="['accordion', this['panel3'] ? 'active' : '']"
       >
-        Section 3
+        One Direction
       </button>
       <div ref="panel3" class="panel">
         <fourth-comp></fourth-comp>
@@ -98,7 +98,7 @@
         onclick="blur()"
         :class="['accordion', this['panel4'] ? 'active' : '']"
       >
-        Section 4
+        Zayn
       </button>
       <div ref="panel4" class="panel">
         <fifth-comp></fifth-comp>
@@ -108,7 +108,7 @@
         onclick="blur()"
         :class="['accordion', this['panel5'] ? 'active' : '']"
       >
-        Section 5
+        Legend Of The Blue Sea
       </button>
       <div ref="panel5" class="panel">
         <lotbs></lotbs>
@@ -118,7 +118,7 @@
         onclick="blur()"
         :class="['accordion', this['panel6'] ? 'active' : '']"
       >
-        Section 6
+        Descendants Of The Sun
       </button>
       <div ref="panel6" class="panel">
         <dots></dots>
@@ -128,7 +128,7 @@
         onclick="blur()"
         :class="['accordion', this['panel7'] ? 'active' : '']"
       >
-        Section 7
+        Hotel Del Luna
       </button>
       <div ref="panel7" class="panel">
         <hdl></hdl>
@@ -138,7 +138,7 @@
         onclick="blur()"
         :class="['accordion', this['panel8'] ? 'active' : '']"
       >
-        Section 8
+        My Love From The Star
       </button>
       <div ref="panel8" class="panel">
         <mlfts></mlfts>
@@ -148,7 +148,7 @@
         onclick="blur()"
         :class="['accordion', this['panel9'] ? 'active' : '']"
       >
-        Section 9
+        Memes
       </button>
       <div ref="panel9" class="panel">
         <memes></memes>
@@ -158,7 +158,7 @@
         onclick="blur()"
         :class="['accordion', this['panel10'] ? 'active' : '']"
       >
-        Section 10
+        Chats
       </button>
       <div ref="panel10" class="panel">
         <chats></chats>
@@ -168,7 +168,7 @@
         onclick="blur()"
         :class="['accordion', this['panel11'] ? 'active' : '']"
       >
-        Section 11
+        Flirting
       </button>
       <div ref="panel11" class="panel">
         <flirting></flirting>
@@ -178,7 +178,7 @@
         onclick="blur()"
         :class="['accordion', this['panel12'] ? 'active' : '']"
       >
-        Section 12
+        Stickers
       </button>
       <div ref="panel12" class="panel">
         <sticker></sticker>
@@ -188,7 +188,7 @@
         onclick="blur()"
         :class="['accordion', this['panel13'] ? 'active' : '']"
       >
-        Section 13
+        M_Talha789
       </button>
       <div ref="panel13" class="panel">
         <mtalha-789></mtalha-789>
@@ -198,7 +198,7 @@
         onclick="blur()"
         :class="['accordion', this['panel14'] ? 'active' : '']"
       >
-        Section 14
+        Comic
       </button>
       <div ref="panel14" class="panel">
         <comic></comic>
@@ -208,7 +208,7 @@
         onclick="blur()"
         :class="['accordion', this['panel15'] ? 'active' : '']"
       >
-        Section 15
+        Your Parents
       </button>
       <div ref="panel15" class="panel">
         <inlaws></inlaws>
@@ -218,7 +218,7 @@
         onclick="blur()"
         :class="['accordion', this['panel16'] ? 'active' : '']"
       >
-        Section 16
+        Hearts
       </button>
       <div ref="panel16" class="panel">
         <heart></heart>
@@ -386,7 +386,7 @@ export default {
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
