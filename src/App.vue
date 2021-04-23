@@ -2,11 +2,15 @@
   <div id="app">
     <div
       v-if="false"
-      style="height: 100vh; display:flex; justify-content:center; align-items:center"
-      
+      style="
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
     >
       <section
-        style="display: flex; flex-direction: column; align-items:center"
+        style="display: flex; flex-direction: column; align-items: center"
         class="mr-2"
       >
         <h1>Days</h1>
@@ -14,21 +18,36 @@
       </section>
       <h1 class="mt-5 colon">:</h1>
       <section
-        style="display: flex; flex-direction: column; align-items:center; margin-left:10px"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 10px;
+        "
       >
         <h1>Hours</h1>
         <h1>{{ hours }}</h1>
       </section>
       <h1 class="mt-5 colon">:</h1>
       <section
-        style="display: flex; flex-direction: column; align-items:center;  margin-left:10px"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 10px;
+        "
       >
         <h1>Minutes</h1>
         <h1>{{ minutes }}</h1>
       </section>
       <h1 class="mt-5 colon">:</h1>
       <section
-        style="display: flex; flex-direction: column; align-items:center;  margin-left:10px"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 10px;
+        "
       >
         <h1>Seconds</h1>
         <h1>{{ seconds }}</h1>
@@ -44,7 +63,16 @@
         @audio="myAudio = $event"
         :player="player"
       ></decoration-comp>
-      <second-comp></second-comp>
+      <button
+        @click="open"
+        onclick="blur()"
+        :class="['accordion', this.clicked ? 'active' : '']"
+      >
+        Section 2
+      </button>
+      <div ref="panel" class="panel">
+        <second-comp></second-comp>
+      </div>
       <third-comp></third-comp>
       <fourth-comp></fourth-comp>
       <fifth-comp></fifth-comp>
@@ -83,11 +111,12 @@ import mtalha789 from "./components/mtalha789.vue";
 import comic from "./components/comic.vue";
 import inlaws from "./components/inlaws.vue";
 import heart from "./components/heart.vue";
-import AsyncPreloader from "async-preloader"; 
+import AsyncPreloader from "async-preloader";
 
 export default {
-  data: function() {
+  data: function () {
     return {
+      clicked: false,
       check: true,
       hours: "",
       days: "",
@@ -100,6 +129,14 @@ export default {
     };
   },
   methods: {
+    open() {
+      this.clicked = !this.clicked;
+      if (this.$refs.panel.style.maxHeight) {
+        this.$refs.panel.style.maxHeight = null;
+      } else {
+        this.$refs.panel.style.maxHeight = this.$refs.panel.scrollHeight + "px";
+      }
+    },
     CountdownClock() {
       var a = new Date();
       var b = new Date("05/10/" + a.getFullYear());
@@ -138,10 +175,10 @@ export default {
       }
     },
   },
-  watch:{
-    myAudio(){
-      console.log("here")
-    }
+  watch: {
+    myAudio() {
+      console.log("here");
+    },
   },
   created() {
     // const audioContext = new AudioContext();
@@ -149,7 +186,7 @@ export default {
       src: require("./assets/garden.mp3"),
       body: "arrayBuffer",
     });
-    pItem.then(item => console.log({item}))
+    pItem.then((item) => console.log({ item }));
     setInterval(this.CountdownClock, 0);
   },
   components: {
@@ -189,5 +226,30 @@ export default {
   .colon {
     margin-bottom: 27px;
   }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 </style>
