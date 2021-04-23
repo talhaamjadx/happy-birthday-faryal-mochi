@@ -104,6 +104,9 @@
         <fifth-comp></fifth-comp>
       </div>
       <button
+        :style="`background-image: url('${require('./assets/lotbs-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel5')"
         onclick="blur()"
         :class="['accordion', this['panel5'] ? 'active' : '']"
@@ -114,6 +117,9 @@
         <lotbs></lotbs>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/dots-thumbnail.jpeg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel6')"
         onclick="blur()"
         :class="['accordion', this['panel6'] ? 'active' : '']"
@@ -124,6 +130,9 @@
         <dots></dots>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/hdl-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 35%;`"
         @click="open('panel7')"
         onclick="blur()"
         :class="['accordion', this['panel7'] ? 'active' : '']"
@@ -134,6 +143,9 @@
         <hdl></hdl>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/mlfts-thubnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel8')"
         onclick="blur()"
         :class="['accordion', this['panel8'] ? 'active' : '']"
@@ -383,7 +395,7 @@ export default {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 60px;
   width: 100%;
   border: none;
   text-align: center;
