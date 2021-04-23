@@ -64,30 +64,165 @@
         :player="player"
       ></decoration-comp>
       <button
-        @click="open"
+        @click="open('panel1')"
         onclick="blur()"
-        :class="['accordion', this.clicked ? 'active' : '']"
+        :class="['accordion', this['panel1'] ? 'active' : '']"
+      >
+        Section 1
+      </button>
+      <div ref="panel1" class="panel">
+        <second-comp></second-comp>
+      </div>
+      <button
+        @click="open('panel2')"
+        onclick="blur()"
+        :class="['accordion', this['panel2'] ? 'active' : '']"
       >
         Section 2
       </button>
-      <div ref="panel" class="panel">
-        <second-comp></second-comp>
+      <div ref="panel2" class="panel">
+        <third-comp></third-comp>
       </div>
-      <third-comp></third-comp>
-      <fourth-comp></fourth-comp>
-      <fifth-comp></fifth-comp>
-      <lotbs></lotbs>
-      <dots></dots>
-      <hdl></hdl>
-      <mlfts></mlfts>
-      <memes></memes>
-      <chats></chats>
-      <flirting></flirting>
-      <sticker></sticker>
-      <mtalha-789></mtalha-789>
-      <comic></comic>
-      <inlaws></inlaws>
-      <heart></heart>
+      <button
+        @click="open('panel3')"
+        onclick="blur()"
+        :class="['accordion', this['panel3'] ? 'active' : '']"
+      >
+        Section 3
+      </button>
+      <div ref="panel3" class="panel">
+        <fourth-comp></fourth-comp>
+      </div>
+      <button
+        @click="open('panel4')"
+        onclick="blur()"
+        :class="['accordion', this['panel4'] ? 'active' : '']"
+      >
+        Section 4
+      </button>
+      <div ref="panel4" class="panel">
+        <fifth-comp></fifth-comp>
+      </div>
+      <button
+        @click="open('panel5')"
+        onclick="blur()"
+        :class="['accordion', this['panel5'] ? 'active' : '']"
+      >
+        Section 5
+      </button>
+      <div ref="panel5" class="panel">
+        <lotbs></lotbs>
+      </div>
+      <button
+        @click="open('panel6')"
+        onclick="blur()"
+        :class="['accordion', this['panel6'] ? 'active' : '']"
+      >
+        Section 6
+      </button>
+      <div ref="panel6" class="panel">
+        <dots></dots>
+      </div>
+      <button
+        @click="open('panel7')"
+        onclick="blur()"
+        :class="['accordion', this['panel7'] ? 'active' : '']"
+      >
+        Section 7
+      </button>
+      <div ref="panel7" class="panel">
+        <hdl></hdl>
+      </div>
+      <button
+        @click="open('panel8')"
+        onclick="blur()"
+        :class="['accordion', this['panel8'] ? 'active' : '']"
+      >
+        Section 8
+      </button>
+      <div ref="panel8" class="panel">
+        <mlfts></mlfts>
+      </div>
+      <button
+        @click="open('panel9')"
+        onclick="blur()"
+        :class="['accordion', this['panel9'] ? 'active' : '']"
+      >
+        Section 9
+      </button>
+      <div ref="panel9" class="panel">
+        <memes></memes>
+      </div>
+      <button
+        @click="open('panel10')"
+        onclick="blur()"
+        :class="['accordion', this['panel10'] ? 'active' : '']"
+      >
+        Section 10
+      </button>
+      <div ref="panel10" class="panel">
+        <chats></chats>
+      </div>
+      <button
+        @click="open('panel11')"
+        onclick="blur()"
+        :class="['accordion', this['panel11'] ? 'active' : '']"
+      >
+        Section 11
+      </button>
+      <div ref="panel11" class="panel">
+        <flirting></flirting>
+      </div>
+      <button
+        @click="open('panel12')"
+        onclick="blur()"
+        :class="['accordion', this['panel12'] ? 'active' : '']"
+      >
+        Section 12
+      </button>
+      <div ref="panel12" class="panel">
+        <sticker></sticker>
+      </div>
+      <button
+        @click="open('panel13')"
+        onclick="blur()"
+        :class="['accordion', this['panel13'] ? 'active' : '']"
+      >
+        Section 13
+      </button>
+      <div ref="panel13" class="panel">
+        <mtalha-789></mtalha-789>
+      </div>
+      <button
+        @click="open('panel14')"
+        onclick="blur()"
+        :class="['accordion', this['panel14'] ? 'active' : '']"
+      >
+        Section 14
+      </button>
+      <div ref="panel14" class="panel">
+        <comic></comic>
+      </div>
+      <button
+        @click="open('panel15')"
+        onclick="blur()"
+        :class="['accordion', this['panel15'] ? 'active' : '']"
+      >
+        Section 15
+      </button>
+      <div ref="panel15" class="panel">
+        <inlaws></inlaws>
+      </div>
+      <button
+        @click="open('panel16')"
+        onclick="blur()"
+        :class="['accordion', this['panel16'] ? 'active' : '']"
+      >
+        Section 16
+      </button>
+      <div ref="panel16" class="panel">
+        <heart></heart>
+      </div>
     </div>
   </div>
 </template>
@@ -116,7 +251,22 @@ import AsyncPreloader from "async-preloader";
 export default {
   data: function () {
     return {
-      clicked: false,
+      panel1: false,
+      panel2: false,
+      panel3: false,
+      panel4: false,
+      panel5: false,
+      panel6: false,
+      panel7: false,
+      panel8: false,
+      panel9: false,
+      panel10: false,
+      panel11: false,
+      panel12: false,
+      panel13: false,
+      panel14: false,
+      panel15: false,
+      panel16: false,
       check: true,
       hours: "",
       days: "",
@@ -129,12 +279,13 @@ export default {
     };
   },
   methods: {
-    open() {
-      this.clicked = !this.clicked;
-      if (this.$refs.panel.style.maxHeight) {
-        this.$refs.panel.style.maxHeight = null;
+    open(section) {
+      this[section] = !this[section];
+      if (this.$refs[section].style.maxHeight) {
+        this.$refs[section].style.maxHeight = null;
       } else {
-        this.$refs.panel.style.maxHeight = this.$refs.panel.scrollHeight + "px";
+        this.$refs[section].style.maxHeight =
+          this.$refs[section].scrollHeight + "px";
       }
     },
     CountdownClock() {
