@@ -64,6 +64,9 @@
         :player="player"
       ></decoration-comp>
       <button
+      :style="`background-image: url('${require('./assets/hbd-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 47%;`"
         @click="open('panel1')"
         onclick="blur()"
         :class="['accordion', this['panel1'] ? 'active' : '']"
@@ -74,6 +77,9 @@
         <second-comp></second-comp>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/bts-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel2')"
         onclick="blur()"
         :class="['accordion', this['panel2'] ? 'active' : '']"
@@ -84,6 +90,9 @@
         <third-comp></third-comp>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/1d-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 0%;`"
         @click="open('panel3')"
         onclick="blur()"
         :class="['accordion', this['panel3'] ? 'active' : '']"
@@ -94,6 +103,9 @@
         <fourth-comp></fourth-comp>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/zayn-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel4')"
         onclick="blur()"
         :class="['accordion', this['panel4'] ? 'active' : '']"
@@ -143,7 +155,7 @@
         <hdl></hdl>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/mlfts-thubnail.jpg')}');color: black;
+      :style="`background-image: url('${require('./assets/mlfts-thumbnail.jpg')}');color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel8')"
@@ -156,6 +168,9 @@
         <mlfts></mlfts>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/memes-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 60%;`"
         @click="open('panel9')"
         onclick="blur()"
         :class="['accordion', this['panel9'] ? 'active' : '']"
@@ -166,6 +181,9 @@
         <memes></memes>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/chats-thumbnail.png')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel10')"
         onclick="blur()"
         :class="['accordion', this['panel10'] ? 'active' : '']"
@@ -176,6 +194,9 @@
         <chats></chats>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/cheese-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 20%;`"
         @click="open('panel11')"
         onclick="blur()"
         :class="['accordion', this['panel11'] ? 'active' : '']"
@@ -186,6 +207,9 @@
         <flirting></flirting>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/stickers-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 40%;`"
         @click="open('panel12')"
         onclick="blur()"
         :class="['accordion', this['panel12'] ? 'active' : '']"
@@ -206,6 +230,9 @@
         <mtalha-789></mtalha-789>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/comic-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel14')"
         onclick="blur()"
         :class="['accordion', this['panel14'] ? 'active' : '']"
@@ -216,6 +243,9 @@
         <comic></comic>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/parents-thumbnail.jpg')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel15')"
         onclick="blur()"
         :class="['accordion', this['panel15'] ? 'active' : '']"
@@ -226,6 +256,9 @@
         <inlaws></inlaws>
       </div>
       <button
+      :style="`background-image: url('${require('./assets/hearts-thumbnail.png')}');color: black;
+    background-size: cover;
+    background-position-y: 28%;`"
         @click="open('panel16')"
         onclick="blur()"
         :class="['accordion', this['panel16'] ? 'active' : '']"
