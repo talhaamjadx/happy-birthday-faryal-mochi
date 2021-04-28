@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div :class="stopSpinner ? '' : 'loading'">Loading&#8230;</div>
     <div
       v-if="false"
       style="
@@ -60,6 +61,7 @@
         @player="player = $event"
       ></music-comp>
       <decoration-comp
+        @audioLoaded="stopSpinner = $event"
         @audio="myAudio = $event"
         :player="player"
       ></decoration-comp>
@@ -296,6 +298,7 @@ import AsyncPreloader from "async-preloader";
 export default {
   data: function () {
     return {
+      stopSpinner: false,
       panel1: false,
       panel2: false,
       panel3: false,

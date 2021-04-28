@@ -1390,8 +1390,11 @@ export default {
     // image3.src = require('.././assets/balloon2.png')
     this.audio = new Audio(this.path);
     this.audio.load()
-    setInterval(() => {
-      console.log(this.audio.readyState, "ready state")
+    let spinningInterval = setInterval(() => {
+      if(this.audio.readyState == 4){
+        clearInterval(spinningInterval)
+        this.$emit('audioLoaded', true)
+      }
     },500)
     this.audio.preload = 'auto'
   },
