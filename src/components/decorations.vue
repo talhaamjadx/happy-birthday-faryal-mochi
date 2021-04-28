@@ -1390,6 +1390,9 @@ export default {
     // image3.src = require('.././assets/balloon2.png')
     this.audio = new Audio(this.path);
     this.audio.load()
+    setInterval(() => {
+      console.log(this.audio.readyState, "ready state")
+    },500)
     this.audio.preload = 'auto'
   },
 };
