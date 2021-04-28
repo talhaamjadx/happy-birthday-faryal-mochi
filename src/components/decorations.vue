@@ -1391,11 +1391,12 @@ export default {
     this.audio = new Audio(this.path);
     this.audio.load()
     let spinningInterval = setInterval(() => {
+      console.log(this.audio.readyState)
       if(this.audio.readyState == 4){
         clearInterval(spinningInterval)
         this.$emit('audioLoaded', true)
       }
-    },500)
+    },1)
     this.audio.preload = 'auto'
   },
 };
