@@ -66,7 +66,9 @@
         :player="player"
       ></decoration-comp>
       <button
-      :style="`background-image: url('${require('./assets/hbd-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/hbd-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 47%;`"
         @click="open('panel1')"
@@ -92,7 +94,9 @@
         <third-comp></third-comp>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/1d-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/1d-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 0%;`"
         @click="open('panel3')"
@@ -105,7 +109,9 @@
         <fourth-comp></fourth-comp>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/zayn-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/zayn-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel4')"
@@ -118,7 +124,9 @@
         <fifth-comp></fifth-comp>
       </div>
       <button
-        :style="`background-image: url('${require('./assets/lotbs-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/lotbs-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel5')"
@@ -131,7 +139,9 @@
         <lotbs></lotbs>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/dots-thumbnail.jpeg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/dots-thumbnail.jpeg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel6')"
@@ -144,7 +154,9 @@
         <dots></dots>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/hdl-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/hdl-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 35%;`"
         @click="open('panel7')"
@@ -157,7 +169,9 @@
         <hdl></hdl>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/mlfts-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/mlfts-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel8')"
@@ -170,7 +184,9 @@
         <mlfts></mlfts>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/memes-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/memes-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 60%;`"
         @click="open('panel9')"
@@ -183,7 +199,9 @@
         <memes></memes>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/chats-thumbnail.png')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/chats-thumbnail.png')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel10')"
@@ -196,7 +214,9 @@
         <chats></chats>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/cheese-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/cheese-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 20%;`"
         @click="open('panel11')"
@@ -209,7 +229,9 @@
         <flirting></flirting>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/stickers-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/stickers-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 40%;`"
         @click="open('panel12')"
@@ -232,7 +254,9 @@
         <mtalha-789></mtalha-789>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/comic-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/comic-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel14')"
@@ -245,7 +269,9 @@
         <comic></comic>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/parents-thumbnail.jpg')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/parents-thumbnail.jpg')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel15')"
@@ -258,7 +284,9 @@
         <inlaws></inlaws>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/hearts-thumbnail.png')}');color: black;
+      v-lazyload
+      :data-url="require('./assets/hearts-thumbnail.png')"
+      :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel16')"
