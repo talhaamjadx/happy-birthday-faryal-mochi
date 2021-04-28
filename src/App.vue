@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div :class="stopSpinner ? '' : 'loading'">Loading&#8230;</div>
+    <div :class="stopSpinner ? '' : 'loading'"></div>
     <div
       v-if="false"
       style="
