@@ -1,399 +1,402 @@
 <template>
-  <div class="container">
-    <div class="image">
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image1"
-          v-lazyload
-          :data-url="require('../assets/memes/1.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image2"
-          v-lazyload
-          :data-url="require('../assets/memes/2.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image3"
-          v-lazyload
-          :data-url="require('../assets/memes/3.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image4"
-          v-lazyload
-          :data-url="require('../assets/memes/4.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image5"
-          v-lazyload
-          :data-url="require('../assets/memes/5.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image6"
-          v-lazyload
-          :data-url="require('../assets/memes/6.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image7"
-          v-lazyload
-          :data-url="require('../assets/memes/7.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image8"
-          v-lazyload
-          :data-url="require('../assets/memes/8.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image9"
-          v-lazyload
-          :data-url="require('../assets/memes/9.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image10"
-          v-lazyload
-          :data-url="require('../assets/memes/10.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image11"
-          v-lazyload
-          :data-url="require('../assets/memes/11.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image12"
-          v-lazyload
-          :data-url="require('../assets/memes/12.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image13"
-          v-lazyload
-          :data-url="require('../assets/memes/13.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image14"
-          v-lazyload
-          :data-url="require('../assets/memes/14.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image15"
-          v-lazyload
-          :data-url="require('../assets/memes/15.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image16"
-          v-lazyload
-          :data-url="require('../assets/memes/16.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image17"
-          v-lazyload
-          :data-url="require('../assets/memes/17.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image18"
-          v-lazyload
-          :data-url="require('../assets/memes/18.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image19"
-          v-lazyload
-          :data-url="require('../assets/memes/19.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image20"
-          v-lazyload
-          :data-url="require('../assets/memes/20.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image21"
-          v-lazyload
-          :data-url="require('../assets/memes/21.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image22"
-          v-lazyload
-          :data-url="require('../assets/memes/22.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image23"
-          v-lazyload
-          :data-url="require('../assets/memes/23.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image24"
-          v-lazyload
-          :data-url="require('../assets/memes/24.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image25"
-          v-lazyload
-          :data-url="require('../assets/memes/25.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image26"
-          v-lazyload
-          :data-url="require('../assets/memes/26.jpeg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image27"
-          v-lazyload
-          :data-url="require('../assets/memes/27.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image28"
-          v-lazyload
-          :data-url="require('../assets/memes/28.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image29"
-          v-lazyload
-          :data-url="require('../assets/memes/29.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image30"
-          v-lazyload
-          :data-url="require('../assets/memes/30.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image31"
-          v-lazyload
-          :data-url="require('../assets/memes/31.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image32"
-          v-lazyload
-          :data-url="require('../assets/memes/32.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image33"
-          v-lazyload
-          :data-url="require('../assets/memes/33.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image34"
-          v-lazyload
-          :data-url="require('../assets/memes/34.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image35"
-          v-lazyload
-          :data-url="require('../assets/memes/35.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image36"
-          v-lazyload
-          :data-url="require('../assets/memes/36.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image37"
-          v-lazyload
-          :data-url="require('../assets/memes/37.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image38"
-          v-lazyload
-          :data-url="require('../assets/memes/38.png')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image39"
-          v-lazyload
-          :data-url="require('../assets/memes/39.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image40"
-          v-lazyload
-          :data-url="require('../assets/memes/40.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image41"
-          v-lazyload
-          :data-url="require('../assets/memes/41.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image42"
-          v-lazyload
-          :data-url="require('../assets/memes/42.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
-        <img
-          class="image43"
-          v-lazyload
-          :data-url="require('../assets/memes/43.jpg')"
-          alt=""
-        />
+  <div class="contain">
+    <Description :text="text" />
+    <div class="container">
+      <div class="image">
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image1"
+            v-lazyload
+            :data-url="require('../assets/memes/1.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image2"
+            v-lazyload
+            :data-url="require('../assets/memes/2.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image3"
+            v-lazyload
+            :data-url="require('../assets/memes/3.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image4"
+            v-lazyload
+            :data-url="require('../assets/memes/4.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image5"
+            v-lazyload
+            :data-url="require('../assets/memes/5.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image6"
+            v-lazyload
+            :data-url="require('../assets/memes/6.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image7"
+            v-lazyload
+            :data-url="require('../assets/memes/7.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image8"
+            v-lazyload
+            :data-url="require('../assets/memes/8.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image9"
+            v-lazyload
+            :data-url="require('../assets/memes/9.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image10"
+            v-lazyload
+            :data-url="require('../assets/memes/10.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image11"
+            v-lazyload
+            :data-url="require('../assets/memes/11.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image12"
+            v-lazyload
+            :data-url="require('../assets/memes/12.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image13"
+            v-lazyload
+            :data-url="require('../assets/memes/13.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image14"
+            v-lazyload
+            :data-url="require('../assets/memes/14.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image15"
+            v-lazyload
+            :data-url="require('../assets/memes/15.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image16"
+            v-lazyload
+            :data-url="require('../assets/memes/16.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image17"
+            v-lazyload
+            :data-url="require('../assets/memes/17.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image18"
+            v-lazyload
+            :data-url="require('../assets/memes/18.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image19"
+            v-lazyload
+            :data-url="require('../assets/memes/19.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image20"
+            v-lazyload
+            :data-url="require('../assets/memes/20.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image21"
+            v-lazyload
+            :data-url="require('../assets/memes/21.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image22"
+            v-lazyload
+            :data-url="require('../assets/memes/22.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image23"
+            v-lazyload
+            :data-url="require('../assets/memes/23.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Tae-oh </span>
+          <img
+            class="image24"
+            v-lazyload
+            :data-url="require('../assets/memes/24.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> 🤣🤣🤣🤣🤣🤣 </span>
+          <img
+            class="image25"
+            v-lazyload
+            :data-url="require('../assets/memes/25.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Take care of yourself though. There are some predators out there. I remain concerned about you. If it was upto i'll create a bubble around you to protect you from everyone </span>
+          <img
+            class="image26"
+            v-lazyload
+            :data-url="require('../assets/memes/26.jpeg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Sometimes i wish the anywhere door was real. That way i could reach you at any moment. See you at any moment </span>
+          <img
+            class="image27"
+            v-lazyload
+            :data-url="require('../assets/memes/27.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> I guess you are entering a new ear in your life </span>
+          <img
+            class="image28"
+            v-lazyload
+            :data-url="require('../assets/memes/28.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> jO BaAt hAi! </span>
+          <img
+            class="image29"
+            v-lazyload
+            :data-url="require('../assets/memes/29.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> I still love my pillow though. However evertime i told you that i loved my pillow, i was saying i love you every one of those times! </span>
+          <img
+            class="image30"
+            v-lazyload
+            :data-url="require('../assets/memes/30.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Our common love for noodles </span>
+          <img
+            class="image32"
+            v-lazyload
+            :data-url="require('../assets/memes/32.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> this! 🤣 </span>
+          <img
+            class="image33"
+            v-lazyload
+            :data-url="require('../assets/memes/33.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> And this aunty from 'Abhi to mein jawaan hun' </span>
+          <img
+            class="image34"
+            v-lazyload
+            :data-url="require('../assets/memes/34.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> 🤣 </span>
+          <img
+            class="image35"
+            v-lazyload
+            :data-url="require('../assets/memes/35.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> 🤣 </span>
+          <img
+            class="image36"
+            v-lazyload
+            :data-url="require('../assets/memes/36.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> 🤣 </span>
+          <img
+            class="image37"
+            v-lazyload
+            :data-url="require('../assets/memes/37.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> 🤣 </span>
+          <img
+            class="image38"
+            v-lazyload
+            :data-url="require('../assets/memes/38.png')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> All the times i have teased you with biryani pictures </span>
+          <img
+            class="image39"
+            v-lazyload
+            :data-url="require('../assets/memes/39.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Just as cute as you </span>
+          <img
+            class="image40"
+            v-lazyload
+            :data-url="require('../assets/memes/40.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Who is this dude again? 😆 </span>
+          <img
+            class="image41"
+            v-lazyload
+            :data-url="require('../assets/memes/41.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> remember that joke? </span>
+          <img
+            class="image42"
+            v-lazyload
+            :data-url="require('../assets/memes/42.jpg')"
+            alt=""
+          />
+        </div>
+        <div class="image-container">
+          <span class="text-over"> Oh kurkure </span>
+          <img
+            class="image43"
+            v-lazyload
+            :data-url="require('../assets/memes/43.jpg')"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import description from "../mixins/description";
+export default {
+  data() {
+    return {
+      text: `When you smile and laugh, i smile with you. When you are sad i am sad as well. But i always try to make you laugh, but i will be there with you even when the times are hard
+      `,
+    };
+  },
+  mixins: [description],
+};
 </script>
 
 <style scoped>

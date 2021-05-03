@@ -1,4 +1,6 @@
 <template>
+<div>
+  <Description :text="text" />
   <div class="container">
     <div class="image">
       <div class="image-container">
@@ -18,11 +20,22 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-export default {};
-</script>
+import description from "../mixins/description";
+export default {
+  data(){
+    return{
+      text: `On we are to 'Descendants of the Sun'.
+      `
+    }
+  },
+  mixins:[
+    description
+  ]
+};</script>
 
 <style scoped>
 * {

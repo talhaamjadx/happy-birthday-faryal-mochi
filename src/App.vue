@@ -66,9 +66,9 @@
         :player="player"
       ></decoration-comp>
       <button
-      v-lazyload
-      :data-url="require('./assets/hbd-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/hbd-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 47%;`"
         @click="open('panel1')"
@@ -81,7 +81,7 @@
         <second-comp></second-comp>
       </div>
       <button
-      :style="`background-image: url('${require('./assets/bts-thumbnail.jpg')}');color: black;
+        :style="`background-image: url('${require('./assets/bts-thumbnail.jpg')}');color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel2')"
@@ -94,9 +94,9 @@
         <third-comp></third-comp>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/1d-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/1d-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 0%;`"
         @click="open('panel3')"
@@ -109,9 +109,9 @@
         <fourth-comp></fourth-comp>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/zayn-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/zayn-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel4')"
@@ -124,8 +124,8 @@
         <fifth-comp></fifth-comp>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/lotbs-thumbnail.jpg')"
+        v-lazyload
+        :data-url="require('./assets/lotbs-thumbnail.jpg')"
         :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
@@ -139,9 +139,9 @@
         <lotbs></lotbs>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/dots-thumbnail.jpeg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/dots-thumbnail.jpeg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel6')"
@@ -154,9 +154,9 @@
         <dots></dots>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/hdl-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/hdl-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 35%;`"
         @click="open('panel7')"
@@ -169,9 +169,9 @@
         <hdl></hdl>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/mlfts-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/mlfts-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel8')"
@@ -184,9 +184,9 @@
         <mlfts></mlfts>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/memes-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/memes-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 60%;`"
         @click="open('panel9')"
@@ -199,9 +199,9 @@
         <memes></memes>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/chats-thumbnail.png')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/chats-thumbnail.png')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel10')"
@@ -214,24 +214,24 @@
         <chats></chats>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/cheese-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/cheese-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 20%;`"
         @click="open('panel11')"
         onclick="blur()"
         :class="['accordion', this['panel11'] ? 'active' : '']"
       >
-        Flirting
+            Cheesiness
       </button>
       <div ref="panel11" class="panel">
         <flirting></flirting>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/stickers-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/stickers-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 40%;`"
         @click="open('panel12')"
@@ -254,9 +254,9 @@
         <mtalha-789></mtalha-789>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/comic-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/comic-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel14')"
@@ -269,9 +269,9 @@
         <comic></comic>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/parents-thumbnail.jpg')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/parents-thumbnail.jpg')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel15')"
@@ -284,9 +284,9 @@
         <inlaws></inlaws>
       </div>
       <button
-      v-lazyload
-      :data-url="require('./assets/hearts-thumbnail.png')"
-      :style="`color: black;
+        v-lazyload
+        :data-url="require('./assets/hearts-thumbnail.png')"
+        :style="`color: black;
     background-size: cover;
     background-position-y: 28%;`"
         @click="open('panel16')"
@@ -321,7 +321,6 @@ import mtalha789 from "./components/mtalha789.vue";
 import comic from "./components/comic.vue";
 import inlaws from "./components/inlaws.vue";
 import heart from "./components/heart.vue";
-import AsyncPreloader from "async-preloader";
 
 export default {
   data: function () {
@@ -361,7 +360,7 @@ export default {
         this.$refs[section].style.maxHeight = null;
       } else {
         this.$refs[section].style.maxHeight =
-          this.$refs[section].scrollHeight + "px";
+          "12676px";
       }
     },
     CountdownClock() {
@@ -408,12 +407,6 @@ export default {
     },
   },
   created() {
-    // const audioContext = new AudioContext();
-    const pItem = AsyncPreloader.loadAudio({
-      src: require("./assets/garden.mp3"),
-      body: "arrayBuffer",
-    });
-    pItem.then((item) => console.log({ item }));
     setInterval(this.CountdownClock, 0);
   },
   components: {

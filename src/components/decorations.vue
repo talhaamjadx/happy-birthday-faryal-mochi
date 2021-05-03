@@ -1382,12 +1382,6 @@ export default {
     },
   },
   created() {
-    // let image1 = new Image()
-    // image1.src = require('.././assets/confetti.gif')
-    // let image2 = new Image()
-    // image2.src = require('.././assets/balloon1.png')
-    // let image3 = new Image()
-    // image3.src = require('.././assets/balloon2.png')
     this.audio = new Audio(this.path);
     this.audio.load()
     let spinningInterval = setInterval(() => {

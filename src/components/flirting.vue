@@ -1,4 +1,6 @@
 <template>
+<div>
+  <Description :text="text" />
   <div class="container">
     <div class="image">
       <div class="image-container">
@@ -66,10 +68,22 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-export default {};
+import description from "../mixins/description";
+export default {
+  data(){
+    return{
+      text: `I've said my share of cheesy stuff to you
+      `
+    }
+  },
+  mixins:[
+    description
+  ]
+};
 </script>
 
 <style scoped>

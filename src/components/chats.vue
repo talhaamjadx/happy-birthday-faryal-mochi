@@ -1,8 +1,10 @@
 <template>
+<div>
+  <Description :text="text"/>
   <div class="container">
     <div class="image">
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> 💗💗💗💗💗💗 </span>
         <img
           class="image1"
           v-lazyload
@@ -11,7 +13,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> IDK Faryal Left </span>
         <img
           class="image2"
           v-lazyload
@@ -20,7 +22,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> It is bamboo copter </span>
         <img
           class="image3"
           v-lazyload
@@ -29,7 +31,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> Guess what? what's up? </span>
         <img
           class="image4"
           v-lazyload
@@ -39,10 +41,22 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
-export default {};
+import description from "../mixins/description";
+export default {
+  data(){
+    return{
+      text: `Just some little snippets of our amazing times together
+      `
+    }
+  },
+  mixins:[
+    description
+  ]
+};
 </script>
 
 <style scoped>
