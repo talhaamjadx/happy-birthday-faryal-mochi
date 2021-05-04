@@ -4,7 +4,6 @@
   <div class="container">
     <div class="image">
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image1"
           v-lazyload
@@ -13,7 +12,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image2"
           v-lazyload
@@ -22,7 +20,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image3"
           v-lazyload
@@ -31,7 +28,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image4"
           v-lazyload
@@ -40,7 +36,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image5"
           v-lazyload
@@ -49,7 +44,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image6"
           v-lazyload
@@ -58,7 +52,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image7"
           v-lazyload
@@ -67,7 +60,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image8"
           v-lazyload
@@ -76,7 +68,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image9"
           v-lazyload
@@ -85,7 +76,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image10"
           v-lazyload
@@ -94,7 +84,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image11"
           v-lazyload
@@ -103,7 +92,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image12"
           v-lazyload
@@ -112,7 +100,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image13"
           v-lazyload
@@ -121,7 +108,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image14"
           v-lazyload
@@ -130,7 +116,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image15"
           v-lazyload
@@ -139,7 +124,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image16"
           v-lazyload
@@ -148,7 +132,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image17"
           v-lazyload
@@ -157,7 +140,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image18"
           v-lazyload
@@ -166,7 +148,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image19"
           v-lazyload
@@ -175,7 +156,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image20"
           v-lazyload
@@ -184,7 +164,6 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
         <img
           class="image21"
           v-lazyload
