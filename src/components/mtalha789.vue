@@ -31,7 +31,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> a </span>
         <img
           class="image4"
           v-lazyload
@@ -40,7 +40,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> l </span>
         <img
           class="image5"
           v-lazyload
@@ -54,6 +54,33 @@
           class="image6"
           v-lazyload
           :data-url="require('../assets/everything-else/mtalha789/6.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> a </span>
+        <img
+          class="image4"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/4.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> 789 </span>
+        <img
+          class="image15"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/15.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> l </span>
+        <img
+          class="image5"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/5.jpg')"
           alt=""
         />
       </div>
@@ -130,11 +157,38 @@
         />
       </div>
       <div class="image-container">
+        <span class="text-over"> l </span>
+        <img
+          class="image5"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/5.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
         <span class="text-over"> Tae-oh </span>
         <img
-          class="image15"
+          class="image7"
           v-lazyload
-          :data-url="require('../assets/everything-else/mtalha789/15.jpg')"
+          :data-url="require('../assets/everything-else/mtalha789/7.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image8"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/8.jpg')"
+          alt=""
+        />
+      </div>
+      <div class="image-container">
+        <span class="text-over"> Tae-oh </span>
+        <img
+          class="image9"
+          v-lazyload
+          :data-url="require('../assets/everything-else/mtalha789/9.jpg')"
           alt=""
         />
       </div>
@@ -148,7 +202,7 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `On we are to 'Descendants of the Sun'.
+      text: `I've overused this so much. But i will keep coming up with new things to say. One thing i will say though is that, 'm_talha789 likes you instead of your like 💓'.
       `
     }
   },

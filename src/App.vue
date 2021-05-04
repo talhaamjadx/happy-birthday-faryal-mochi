@@ -243,7 +243,13 @@
       <div ref="panel12" class="panel">
         <sticker></sticker>
       </div>
+      <!-- mtalha-thumbnail.png -->
       <button
+      v-lazyload
+        :data-url="require('./assets/mtalha-thumbnail.png')"
+        :style="`color: black;
+    background-size: cover;
+    background-position-x: 90%;`"
         @click="open('panel13')"
         onclick="blur()"
         :class="['accordion', this['panel13'] ? 'active' : '']"

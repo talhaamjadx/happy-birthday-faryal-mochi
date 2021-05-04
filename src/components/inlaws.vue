@@ -4,7 +4,7 @@
   <div class="container">
     <div class="image">
       <div class="image-container">
-          <span class="text-over"> Tae-oh </span>
+          <span class="text-over"> This is one amazing image. Allah inko aesay he khush rakhay </span>
       <img
         class="image1"
         v-lazyload
@@ -28,7 +28,7 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `On we are to 'Descendants of the Sun'.
+      text: `Parents are Allah's most gracious blessing. I wish that, may Allah grant health and longevity to both your parents and mine 😇
       `
     }
   },

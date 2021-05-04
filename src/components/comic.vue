@@ -14,14 +14,14 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `On we are to 'Descendants of the Sun'.
+      text: `I told you with this comic that you are locked in my heart and you cannot ever leave. And i promise you that you will never leave this heart 💕
       `
     }
   },
   mixins:[
     description
   ]
-};
+}
 </script>
 
 <style scoped>

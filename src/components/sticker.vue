@@ -202,7 +202,7 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `On we are to 'Descendants of the Sun'.
+      text: `All the stickers you've sent me
       `
     }
   },

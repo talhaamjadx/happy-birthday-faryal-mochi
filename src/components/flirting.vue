@@ -4,7 +4,7 @@
   <div class="container">
     <div class="image">
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> 'cutecumber' should be your middlename </span>
         <img
           class="image1"
           v-lazyload
@@ -13,7 +13,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> Like jimin is everyone else's mochi. You are my mochi(jootay seenay wala nhi 🤣) </span>
         <img
           class="image2"
           v-lazyload
@@ -22,7 +22,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> 💕💕💕💕💕💕 </span>
         <img
           class="image3"
           v-lazyload
@@ -31,7 +31,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> if being cute was a crime, you'll be under a life sentence </span>
         <img
           class="image4"
           v-lazyload
@@ -40,7 +40,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> Is that you? </span>
         <img
           class="image5"
           v-lazyload
@@ -49,7 +49,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> If I ever get the chance to cook anything for you. It will be french fries using this potato </span>
         <img
           class="image6"
           v-lazyload
@@ -58,7 +58,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Tae-oh </span>
+        <span class="text-over"> Look at zimal though 😍 </span>
         <img
           class="image7"
           v-lazyload
