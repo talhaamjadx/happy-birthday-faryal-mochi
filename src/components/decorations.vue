@@ -14,7 +14,12 @@
         <h1
           id="h11"
           v-if="!show"
-          style="position: absolute; top: 60px; opacity: 0"
+          style="
+            position: absolute;
+            top: 60px;
+            opacity: 0;
+            font-family: 'Italianno', cursive;
+          "
         >
           Happy Birthday
         </h1>
@@ -23,7 +28,12 @@
         <h1
           id="h12"
           v-if="!show"
-          style="position: absolute; top: 110px; opacity: 0"
+          style="
+            position: absolute;
+            top: 110px;
+            opacity: 0;
+            font-family: 'Italianno', cursive;
+          "
         >
           Faryal!
         </h1>
@@ -1155,10 +1165,8 @@
           </linearGradient>
         </defs>
       </svg>
-      <button @click="func2" v-text="a">
-        Blow Candles!
-      </button>
-      <div class="heart-shape"></div>
+      <button @click="func2" v-text="a">Blow Candles!</button>
+      <div @click="func2" class="heart-shape"></div>
     </div>
     <transition @after-enter="afterEnter" :css="c">
       <img
@@ -1374,6 +1382,8 @@ export default {
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
 .img1 {
   bottom: -300px;
   animation-name: air;
@@ -1461,6 +1471,7 @@ svg {
 }
 
 button {
+  font-family: 'Italianno', cursive;
   padding: 10px 10px 10px 10px;
   position: absolute;
   z-index: 999;
@@ -1558,7 +1569,7 @@ button {
   }
   button {
     padding: 5px 5px 5px 5px;
-    font-size: 17px;
+    font-size: 25px;
     margin-bottom: 50px;
   }
   #img2 {

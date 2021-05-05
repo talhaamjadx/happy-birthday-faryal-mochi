@@ -4,15 +4,6 @@
   <div class="container">
     <div class="image">
       <div class="image-container">
-        <span class="text-over"> 💗💗💗💗💗💗 </span>
-        <img
-          class="image1"
-          v-lazyload
-          :data-url="require('../assets/chats/1.jpg')"
-          alt=""
-        />
-      </div>
-      <div class="image-container">
         <span class="text-over"> IDK Faryal Left </span>
         <img
           class="image2"
@@ -22,7 +13,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> It is bamboo copter </span>
+        <span class="text-over"> I think i've watched many episodes of Doraemon with the kids. Just because you like it </span>
         <img
           class="image3"
           v-lazyload

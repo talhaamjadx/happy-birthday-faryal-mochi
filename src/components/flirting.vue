@@ -76,7 +76,7 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `I've said my share of cheesy stuff to you
+      text: `Warning! There is some cheesy stuff coming!
       `
     }
   },

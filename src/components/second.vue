@@ -1,12 +1,10 @@
 <template>
   <div>
     <section>
-      <h1 :class="{ hello: check }">Happy Birthday</h1>
+      <h1 :class="{ hello: check }">Happy Birthday Yaar!</h1>
       <center>
         <h1 :class="{ hello: check }">
-          To that one special person! Who's Always been there for me. I Know you
-          will say that there was no need for this But i had to do this to make
-          sure that u understand the magnitude of what u mean to me
+          Some of the stuff I say will make you feel weird. But I really wanna speak my mind rn. You do not have the slightest of idea about what you mean to me. You've been there for me when i needed you.
         </h1>
       </center>
     </section>
