@@ -1,22 +1,30 @@
 <template>
-  <div style="overflow-x:hidden;overflow-y:hidden;position:relative">
+  <div style="overflow-x: hidden; overflow-y: hidden; position: relative">
     <div id="div1">
       <img
         id="img2"
         v-if="!show"
-        style="position:absolute"
+        style="position: absolute"
         src=".././assets/confetti.gif"
         alt="confetti"
         height="500px"
         width="800px"
       />
       <transition @after-enter="enter" @before-leave="before">
-        <h1 id="h11" v-if="!show" style="position:absolute; top:60px; opacity:0">
+        <h1
+          id="h11"
+          v-if="!show"
+          style="position: absolute; top: 60px; opacity: 0"
+        >
           Happy Birthday
         </h1>
       </transition>
       <transition @after-enter="enter" @before-leave="before">
-        <h1 id="h12" v-if="!show" style="position:absolute; top:110px; opacity:0">
+        <h1
+          id="h12"
+          v-if="!show"
+          style="position: absolute; top: 110px; opacity: 0"
+        >
           Faryal!
         </h1>
       </transition>
@@ -1147,15 +1155,16 @@
           </linearGradient>
         </defs>
       </svg>
-      <button @click="func2" v-text="a" class="btn btn-sm btn-primary">
+      <button @click="func2" v-text="a">
         Blow Candles!
       </button>
+      <div class="heart-shape"></div>
     </div>
     <transition @after-enter="afterEnter" :css="c">
       <img
         class="img1"
         v-if="!show"
-        style="position:absolute;"
+        style="position: absolute"
         src=".././assets/balloon1.png"
         alt="balloon"
         height="300px"
@@ -1166,7 +1175,7 @@
       <img
         class="img1"
         v-if="!show"
-        style="position:absolute;right:0px;"
+        style="position: absolute; right: 0px"
         src=".././assets/balloon2.png"
         alt="balloon"
         height="300px"
@@ -1179,203 +1188,171 @@
 <script>
 export default {
   props: ["player", "myAudio"],
-  data: function() {
+  data: function () {
     return {
       lyrics: [
-        'It’s so high, it could reach the sky',
-        'It’s so wide, it could hold the sea',
-        'Like this, my heart is being colored',
-        'With your scents',
-        'Like this, love you love you love you, I love you',
-        'It’s warm, whenever I think of you, I’m happy',
-        'Just thinking about holding you',
-        'Makes a smile spread on my face',
-        'You color my world',
-        'If only I was a flower in your garden',
-        'If only I was a cloud in your sky',
-        'I want to decorate and make you prettier',
-        'With my own colors',
-        'Like this, love you love you love you, I love you',
-        'It’s warm, whenever I think of you, I’m happy',
-        'Just thinking about holding you',
-        'Makes a smile spread on my face',
-        'You color my world',
-        'You became my hope, You became my joy',
-        'Wherever I am, whatever I’m doing',
-        'I think of you',
-        'When will my overwhelming love',
-        'Be seen in your heart? When will it reach you?',
-        'I want to give you my all',
-        'I love you love you, I love you',
-        'It’s warm, whenever I think of you, I’m happy',
-        'I can’t express all of my feelings',
-        'With just the words, I love you',
-        'My heart is filled with you',
-        'Like this, love you love you love you, I love you',
-        'It’s warm, whenever I think of you, I’m happy',
-        'Just thinking about holding you',
-        'Makes a smile spread on my face',
-        'You color my world',
-        'I want to live in your garden',
+        "It’s so high, it could reach the sky",
+        "It’s so wide, it could hold the sea",
+        "Like this, my heart is being colored",
+        "With your scents",
+        "Like this, love you love you love you, I love you",
+        "It’s warm, whenever I think of you, I’m happy",
+        "Just thinking about holding you",
+        "Makes a smile spread on my face",
+        "You color my world",
+        "If only I was a flower in your garden",
+        "If only I was a cloud in your sky",
+        "I want to decorate and make you prettier",
+        "With my own colors",
+        "Like this, love you love you love you, I love you",
+        "It’s warm, whenever I think of you, I’m happy",
+        "Just thinking about holding you",
+        "Makes a smile spread on my face",
+        "You color my world",
+        "You became my hope, You became my joy",
+        "Wherever I am, whatever I’m doing",
+        "I think of you",
+        "When will my overwhelming love",
+        "Be seen in your heart? When will it reach you?",
+        "I want to give you my all",
+        "I love you love you, I love you",
+        "It’s warm, whenever I think of you, I’m happy",
+        "I can’t express all of my feelings",
+        "With just the words, I love you",
+        "My heart is filled with you",
+        "Like this, love you love you love you, I love you",
+        "It’s warm, whenever I think of you, I’m happy",
+        "Just thinking about holding you",
+        "Makes a smile spread on my face",
+        "You color my world",
+        "I want to live in your garden",
       ],
       interval: null,
       a: "Blow Candles!",
       show: true,
       audio: null,
-      path: require('../assets/garden.mp3'),
+      path: require("../assets/garden.mp3"),
       c: true,
     };
   },
   methods: {
-    func2: function() {
+    func2: function () {
       this.show = !this.show;
       if (this.a == "Blow Candles!") {
-        this.$store.commit('setCheck1', true)
+        this.$store.commit("setCheck1", true);
         this.interval = setInterval(() => {
-        if(this.audio){
-          // if(this.audio.currentTime == 0){
-          //   clearInterval(this.interval)
-          //   this.myAudio = null
-          // }
-          if(this.audio.currentTime.toFixed(0) == 17){
-            this.$store.commit('setCurrentLyrics', this.lyrics[0])
+          if (this.audio) {
+            // if(this.audio.currentTime == 0){
+            //   clearInterval(this.interval)
+            //   this.myAudio = null
+            // }
+            if (this.audio.currentTime.toFixed(0) == 17) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[0]);
+            } else if (this.audio.currentTime.toFixed(0) == 25) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[1]);
+            } else if (this.audio.currentTime.toFixed(0) == 33) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[2]);
+            } else if (this.audio.currentTime.toFixed(0) == 40) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[3]);
+            } else if (this.audio.currentTime.toFixed(0) == 47) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[4]);
+            } else if (this.audio.currentTime.toFixed(0) == 55) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[5]);
+            } else if (this.audio.currentTime.toFixed(0) == 63) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[6]);
+            } else if (this.audio.currentTime.toFixed(0) == 67) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[7]);
+            } else if (this.audio.currentTime.toFixed(0) == 72) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[8]);
+            } else if (this.audio.currentTime.toFixed(0) == 79) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[9]);
+            } else if (this.audio.currentTime.toFixed(0) == 87) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[10]);
+            } else if (this.audio.currentTime.toFixed(0) == 95) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[11]);
+            } else if (this.audio.currentTime.toFixed(0) == 103) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[12]);
+            } else if (this.audio.currentTime.toFixed(0) == 109) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[13]);
+            } else if (this.audio.currentTime.toFixed(0) == 117) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[14]);
+            } else if (this.audio.currentTime.toFixed(0) == 125) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[15]);
+            } else if (this.audio.currentTime.toFixed(0) == 129) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[16]);
+            } else if (this.audio.currentTime.toFixed(0) == 134) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[17]);
+            } else if (this.audio.currentTime.toFixed(0) == 138) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[18]);
+            } else if (this.audio.currentTime.toFixed(0) == 147) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[19]);
+            } else if (this.audio.currentTime.toFixed(0) == 150) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[20]);
+            } else if (this.audio.currentTime.toFixed(0) == 153) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[21]);
+            } else if (this.audio.currentTime.toFixed(0) == 158) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[22]);
+            } else if (this.audio.currentTime.toFixed(0) == 165) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[23]);
+            } else if (this.audio.currentTime.toFixed(0) == 172) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[24]);
+            } else if (this.audio.currentTime.toFixed(0) == 179) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[25]);
+            } else if (this.audio.currentTime.toFixed(0) == 186) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[26]);
+            } else if (this.audio.currentTime.toFixed(0) == 191) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[27]);
+            } else if (this.audio.currentTime.toFixed(0) == 196) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[28]);
+            } else if (this.audio.currentTime.toFixed(0) == 199) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[29]);
+            } else if (this.audio.currentTime.toFixed(0) == 206) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[30]);
+            } else if (this.audio.currentTime.toFixed(0) == 214) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[31]);
+            } else if (this.audio.currentTime.toFixed(0) == 218) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[32]);
+            } else if (this.audio.currentTime.toFixed(0) == 223) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[33]);
+            } else if (this.audio.currentTime.toFixed(0) == 231) {
+              this.$store.commit("setCurrentLyrics", this.lyrics[34]);
+            } else if (this.audio.currentTime.toFixed(0) == 242) {
+              clearInterval(this.interval);
+            }
+            // console.log(this.audio.currentTime.toFixed(0))
           }
-          else if(this.audio.currentTime.toFixed(0) == 25){
-            this.$store.commit('setCurrentLyrics', this.lyrics[1])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 33){
-            this.$store.commit('setCurrentLyrics', this.lyrics[2])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 40){
-            this.$store.commit('setCurrentLyrics', this.lyrics[3])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 47){
-            this.$store.commit('setCurrentLyrics', this.lyrics[4])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 55){
-            this.$store.commit('setCurrentLyrics', this.lyrics[5])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 63){
-            this.$store.commit('setCurrentLyrics', this.lyrics[6])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 67){
-            this.$store.commit('setCurrentLyrics', this.lyrics[7])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 72){
-            this.$store.commit('setCurrentLyrics', this.lyrics[8])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 79){
-            this.$store.commit('setCurrentLyrics', this.lyrics[9])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 87){
-            this.$store.commit('setCurrentLyrics', this.lyrics[10])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 95){
-            this.$store.commit('setCurrentLyrics', this.lyrics[11])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 103){
-            this.$store.commit('setCurrentLyrics', this.lyrics[12])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 109){
-            this.$store.commit('setCurrentLyrics', this.lyrics[13])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 117){
-            this.$store.commit('setCurrentLyrics', this.lyrics[14])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 125){
-            this.$store.commit('setCurrentLyrics', this.lyrics[15])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 129){
-            this.$store.commit('setCurrentLyrics', this.lyrics[16])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 134){
-            this.$store.commit('setCurrentLyrics', this.lyrics[17])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 138){
-            this.$store.commit('setCurrentLyrics', this.lyrics[18])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 147){
-            this.$store.commit('setCurrentLyrics', this.lyrics[19])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 150){
-            this.$store.commit('setCurrentLyrics', this.lyrics[20])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 153){
-            this.$store.commit('setCurrentLyrics', this.lyrics[21])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 158){
-            this.$store.commit('setCurrentLyrics', this.lyrics[22])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 165){
-            this.$store.commit('setCurrentLyrics', this.lyrics[23])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 172){
-            this.$store.commit('setCurrentLyrics', this.lyrics[24])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 179){
-            this.$store.commit('setCurrentLyrics', this.lyrics[25])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 186){
-            this.$store.commit('setCurrentLyrics', this.lyrics[26])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 191){
-            this.$store.commit('setCurrentLyrics', this.lyrics[27])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 196){
-            this.$store.commit('setCurrentLyrics', this.lyrics[28])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 199){
-            this.$store.commit('setCurrentLyrics', this.lyrics[29])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 206){
-            this.$store.commit('setCurrentLyrics', this.lyrics[30])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 214){
-            this.$store.commit('setCurrentLyrics', this.lyrics[31])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 218){
-            this.$store.commit('setCurrentLyrics', this.lyrics[32])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 223){
-            this.$store.commit('setCurrentLyrics', this.lyrics[33])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 231){
-            this.$store.commit('setCurrentLyrics', this.lyrics[34])
-          }
-          else if(this.audio.currentTime.toFixed(0) == 242){
-            clearInterval(this.interval)
-          }
-          // console.log(this.audio.currentTime.toFixed(0))
-        }
-      },1000)
+        }, 1000);
         this.a = "Light it up again!";
         this.audio.play();
         // this.$emit("audio", this.audio);
-        this.$store.commit('setMyAudio', this.audio)
+        this.$store.commit("setMyAudio", this.audio);
         this.player.pause();
       } else {
-        clearInterval(this.interval)
-        this.$store.commit('setCheck1', false)
-        this.$store.commit('setMyAudio', null)
-        this.$store.commit('setCurrentLyrics', "I can't sing but I guess this explains what i wanna say, So here it goes...")
+        clearInterval(this.interval);
+        this.$store.commit("setCheck1", false);
+        this.$store.commit("setMyAudio", null);
+        this.$store.commit(
+          "setCurrentLyrics",
+          "I can't sing but I guess this explains what i wanna say, So here it goes..."
+        );
         this.a = "Blow Candles!";
         this.audio.load();
       }
     },
-    afterEnter: function(el) {
+    afterEnter: function (el) {
       el.style.transform = "rotateZ(50deg)";
       el.style.left = "-15px";
       this.c = false;
     },
-    afterEnter2: function(el) {
+    afterEnter2: function (el) {
       el.style.transform = "rotateZ(-50deg)";
       el.style.right = "-15px";
     },
-    enter: function(el) {
+    enter: function (el) {
       el.style.opacity = 1;
       el.style.transition = "3s";
     },
-    before: function(el) {
+    before: function (el) {
       el.style.opacity = "0";
       el.style.transition = "0.5s";
       this.c = true;
@@ -1383,15 +1360,15 @@ export default {
   },
   created() {
     this.audio = new Audio(this.path);
-    this.audio.load()
+    this.audio.load();
     let spinningInterval = setInterval(() => {
-      console.log(this.audio.readyState)
-      if(this.audio.readyState == 4){
-        clearInterval(spinningInterval)
-        this.$emit('audioLoaded', true)
+      console.log(this.audio.readyState);
+      if (this.audio.readyState == 4) {
+        clearInterval(spinningInterval);
+        this.$emit("audioLoaded", true);
       }
-    },1)
-    this.audio.preload = 'auto'
+    }, 1);
+    this.audio.preload = "auto";
   },
 };
 </script>
@@ -1440,9 +1417,56 @@ svg {
   width: 300px;
 }
 
+.heart-shape {
+  top: 233px;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 0, 45, 1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.heart-shape:before {
+  position: absolute;
+  bottom: 0px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  content: "";
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 45, 1);
+}
+
+.heart-shape:after {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  content: "";
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+  background-color: rgba(255, 0, 45, 1);
+}
+
 button {
   padding: 10px 10px 10px 10px;
   position: absolute;
+  z-index: 999;
+  outline: none;
+  font-size: small;
+  color: white;
   bottom: 50px;
 }
 
@@ -1470,10 +1494,10 @@ button {
   h1 {
     font-size: 60px;
   }
-  #h11{
+  #h11 {
     margin-top: 20px;
   }
-  #h12{
+  #h12 {
     margin-top: 40px;
   }
   svg {
@@ -1487,7 +1511,7 @@ button {
   }
   button {
     padding: 20px 20px 20px 20px;
-    font-size: 25px;
+    font-size: 17px;
     margin-bottom: 200px;
   }
   #img2 {
@@ -1517,10 +1541,10 @@ button {
   h1 {
     font-size: 30px;
   }
-  #h11{
+  #h11 {
     margin-top: 20px;
   }
-  #h12{
+  #h12 {
     margin-top: 20px;
   }
   svg {
@@ -1534,7 +1558,7 @@ button {
   }
   button {
     padding: 5px 5px 5px 5px;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 50px;
   }
   #img2 {
@@ -1559,5 +1583,4 @@ button {
     }
   }
 }
-
 </style>
