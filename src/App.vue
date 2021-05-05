@@ -75,7 +75,9 @@
         onclick="blur()"
         :class="['accordion', this['panel1'] ? 'active' : '']"
       >
-        Happy Birthday
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          Happy Birthday
+        </p>
       </button>
       <div ref="panel1" class="panel">
         <second-comp></second-comp>
@@ -88,7 +90,7 @@
         onclick="blur()"
         :class="['accordion', this['panel2'] ? 'active' : '']"
       >
-        BTS
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">BTS</p>
       </button>
       <div ref="panel2" class="panel">
         <third-comp></third-comp>
@@ -103,7 +105,9 @@
         onclick="blur()"
         :class="['accordion', this['panel3'] ? 'active' : '']"
       >
-        One Direction
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          One Direction
+        </p>
       </button>
       <div ref="panel3" class="panel">
         <fourth-comp></fourth-comp>
@@ -118,7 +122,7 @@
         onclick="blur()"
         :class="['accordion', this['panel4'] ? 'active' : '']"
       >
-        Zayn
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Zayn</p>
       </button>
       <div ref="panel4" class="panel">
         <fifth-comp></fifth-comp>
@@ -133,7 +137,9 @@
         onclick="blur()"
         :class="['accordion', this['panel5'] ? 'active' : '']"
       >
-        Legend Of The Blue Sea
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          Legend Of The Blue Sea
+        </p>
       </button>
       <div ref="panel5" class="panel">
         <lotbs></lotbs>
@@ -148,7 +154,9 @@
         onclick="blur()"
         :class="['accordion', this['panel6'] ? 'active' : '']"
       >
-        Descendants Of The Sun
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          Descendants Of The Sun
+        </p>
       </button>
       <div ref="panel6" class="panel">
         <dots></dots>
@@ -163,7 +171,9 @@
         onclick="blur()"
         :class="['accordion', this['panel7'] ? 'active' : '']"
       >
-        Hotel Del Luna
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          Hotel Del Luna
+        </p>
       </button>
       <div ref="panel7" class="panel">
         <hdl></hdl>
@@ -178,7 +188,9 @@
         onclick="blur()"
         :class="['accordion', this['panel8'] ? 'active' : '']"
       >
-        My Love From The Star
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">
+          My Love From The Star
+        </p>
       </button>
       <div ref="panel8" class="panel">
         <mlfts></mlfts>
@@ -193,7 +205,7 @@
         onclick="blur()"
         :class="['accordion', this['panel9'] ? 'active' : '']"
       >
-        Memes
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Memes</p>
       </button>
       <div ref="panel9" class="panel">
         <memes></memes>
@@ -208,7 +220,7 @@
         onclick="blur()"
         :class="['accordion', this['panel10'] ? 'active' : '']"
       >
-        Chats
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Chats</p>
       </button>
       <div ref="panel10" class="panel">
         <chats></chats>
@@ -223,7 +235,7 @@
         onclick="blur()"
         :class="['accordion', this['panel11'] ? 'active' : '']"
       >
-            Cheesiness
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Cheesiness</p>
       </button>
       <div ref="panel11" class="panel">
         <flirting></flirting>
@@ -238,14 +250,14 @@
         onclick="blur()"
         :class="['accordion', this['panel12'] ? 'active' : '']"
       >
-        Stickers
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Stickers</p>
       </button>
       <div ref="panel12" class="panel">
         <sticker></sticker>
       </div>
       <!-- mtalha-thumbnail.png -->
       <button
-      v-lazyload
+        v-lazyload
         :data-url="require('./assets/mtalha-thumbnail.png')"
         :style="`color: black;
     background-size: cover;
@@ -254,7 +266,7 @@
         onclick="blur()"
         :class="['accordion', this['panel13'] ? 'active' : '']"
       >
-        M_Talha789
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">M_Talha789</p>
       </button>
       <div ref="panel13" class="panel">
         <mtalha-789></mtalha-789>
@@ -269,7 +281,7 @@
         onclick="blur()"
         :class="['accordion', this['panel14'] ? 'active' : '']"
       >
-        Comic
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Comic</p>
       </button>
       <div ref="panel14" class="panel">
         <comic></comic>
@@ -284,7 +296,7 @@
         onclick="blur()"
         :class="['accordion', this['panel15'] ? 'active' : '']"
       >
-        Your Parents
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Your Parents</p>
       </button>
       <div ref="panel15" class="panel">
         <inlaws></inlaws>
@@ -299,7 +311,7 @@
         onclick="blur()"
         :class="['accordion', this['panel16'] ? 'active' : '']"
       >
-        Hearts
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Hearts</p>
       </button>
       <div ref="panel16" class="panel">
         <heart></heart>
@@ -365,8 +377,7 @@ export default {
       if (this.$refs[section].style.maxHeight) {
         this.$refs[section].style.maxHeight = null;
       } else {
-        this.$refs[section].style.maxHeight =
-          "12676px";
+        this.$refs[section].style.maxHeight = "12676px";
       }
     },
     CountdownClock() {
