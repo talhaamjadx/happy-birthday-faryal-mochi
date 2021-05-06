@@ -1474,7 +1474,7 @@ button {
   font-family: 'Italianno', cursive;
   padding: 10px 10px 10px 10px;
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   outline: none;
   font-size: small;
   color: white;

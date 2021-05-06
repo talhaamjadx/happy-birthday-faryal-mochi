@@ -2,7 +2,7 @@
   <div id="app">
     <div :class="stopSpinner ? '' : 'loading'"></div>
     <div
-      v-if="false"
+      v-if="check"
       style="
         height: 100vh;
         display: flex;
@@ -54,7 +54,7 @@
         <h1>{{ seconds }}</h1>
       </section>
     </div>
-    <div>
+    <div v-else>
       <music-comp
         :myAudio="myAudio"
         @isPlaying="isPlaying = $event"
@@ -266,7 +266,7 @@
         onclick="blur()"
         :class="['accordion', this['panel13'] ? 'active' : '']"
       >
-        <p style="background: rgba(0, 0, 0, 0.5); color: white">M_Talha789</p>
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">m_talha789</p>
       </button>
       <div ref="panel13" class="panel">
         <mtalha-789></mtalha-789>
@@ -296,7 +296,7 @@
         onclick="blur()"
         :class="['accordion', this['panel15'] ? 'active' : '']"
       >
-        <p style="background: rgba(0, 0, 0, 0.5); color: white">Your Parents</p>
+        <p style="background: rgba(0, 0, 0, 0.5); color: white">Parents</p>
       </button>
       <div ref="panel15" class="panel">
         <inlaws></inlaws>
