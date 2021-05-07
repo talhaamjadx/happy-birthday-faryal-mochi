@@ -1,11 +1,22 @@
 <template>
   <div>
     <section>
-      <h1 :class="{ hello: check }">Happy Birthday Yaar!</h1>
+      <h1 :class="{ hello: check }">Happy Birthday Girl!</h1>
       <center>
         <h1 :class="{ hello: check }">
-          Some of the stuff I say will make you feel weird. But I really wanna speak my mind rn. You do not have the slightest of idea about what you mean to me. You've been there for me when i needed you.
+          How do I even explain to you how i feel about you and what you mean to
+          me? It transcends words. There's nothing I can say to explain it
+          because words, language wouldn't do it justice. I have never felt
+          anything like this before. And I knew it the moment i felt it that it
+          is was different, it was something special, it is '사랑'. Even though
+          you'll let zimal slap me (joking), I would stand infront of you to
+          shield you from this world. I will cover your head with my hands in
+          rain because I know that you do not like the feeling of raindrops
+          falling on your head. I'll stop now, because I can write entire books about you. I wish you goodluck
+          for the future. May BTS come to Pakistan. May all the sorrows take another alleyway and steer away from you path! 
         </h1>
+        <p>&#x1f497; &#x1f497; &#x1f497; &#x1f497; &#x1f497; &#x1f497;</p>
+        <p>사랑해</p>
       </center>
     </section>
   </div>
@@ -13,7 +24,7 @@
 
 <script>
 export default {
-  data: function() {
+  data: function () {
     return {
       observer: null,
       change: true,

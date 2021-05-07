@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <div :class="stopSpinner ? '' : 'loading'"></div>
     <div
-      v-if="check"
+      v-if="false"
       style="
         height: 100vh;
         display: flex;
@@ -55,6 +54,7 @@
       </section>
     </div>
     <div v-else>
+      <div :class="stopSpinner ? '' : 'loading'"></div>
       <music-comp
         :myAudio="myAudio"
         @isPlaying="isPlaying = $event"
