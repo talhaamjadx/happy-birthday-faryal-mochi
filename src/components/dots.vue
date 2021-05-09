@@ -31,7 +31,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> Look they predicted coronavirus 🙁 </span>
+          <span class="text-over"> Look they predicted coronavirus &#x1f62e; </span>
           <img
             class="image4"
             v-lazyload

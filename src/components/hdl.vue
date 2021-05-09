@@ -40,7 +40,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> That's me evertime i see you 💕 </span>
+        <span class="text-over"> That's me evertime i see you &#x1f495; </span>
         <img
           class="image5"
           v-lazyload

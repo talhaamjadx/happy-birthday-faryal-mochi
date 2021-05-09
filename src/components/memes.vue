@@ -4,7 +4,7 @@
     <div class="container">
       <div class="image">
         <div class="image-container">
-          <span class="text-over"> 🤣🤣🤣🤣🤣🤣 </span>
+          <span class="text-over"> &#x1f602; &#x1f602; &#x1f602; &#x1f602; &#x1f602; &#x1f602; </span>
           <img
             class="image25"
             v-lazyload
@@ -67,7 +67,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> this! 🤣 </span>
+          <span class="text-over"> this! &#x1f602; </span>
           <img
             class="image33"
             v-lazyload
@@ -85,7 +85,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> 🤣 </span>
+          <span class="text-over"> &#x1f602; </span>
           <img
             class="image35"
             v-lazyload
@@ -94,7 +94,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> 🤣 </span>
+          <span class="text-over"> &#x1f602; </span>
           <img
             class="image36"
             v-lazyload
@@ -103,7 +103,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> 🤣 </span>
+          <span class="text-over"> &#x1f602; </span>
           <img
             class="image37"
             v-lazyload
@@ -112,7 +112,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> 🤣 </span>
+          <span class="text-over"> &#x1f602; </span>
           <img
             class="image38"
             v-lazyload
@@ -139,7 +139,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> Who is this dude again? 😆 </span>
+          <span class="text-over"> Who is this dude again? &#x1f602; </span>
           <img
             class="image41"
             v-lazyload

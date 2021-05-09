@@ -3,7 +3,7 @@
       <Description :text="text"/>
       <div class="image">
         <div class="image-container">
-          <span class="text-over">Remember when they dressed Tae-oh like a girl? 🤣</span>
+          <span class="text-over">Remember when they dressed Tae-oh like a girl? &#x1f923;</span>
           <img
             class="image1"
             v-lazyload
@@ -12,7 +12,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> Probably the best scene of the show. When Hoe Joon Jae reunited with his mother! 💓 </span>
+          <span class="text-over"> Probably the best scene of the show. When Hoe Joon Jae reunited with his mother! &#x1f496; </span>
           <img
             class="image2"
             v-lazyload
@@ -30,7 +30,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> I truly felt that when she left. The thought of losing you is just too much 💔 </span>
+          <span class="text-over"> I truly felt that when she left. The thought of losing you is just too much &#x1f494; </span>
           <img
             class="image4"
             v-lazyload
@@ -48,7 +48,7 @@
           />
         </div>
         <div class="image-container">
-          <span class="text-over"> I have spent some amazing time with you. And when she left her biggest pearl which was her happiest moment, it reminded me of you. But she had it once. I have it each day, but not from crying but from happiness! 💖 </span>
+          <span class="text-over"> I have spent some amazing time with you. And when she left her biggest pearl which was her happiest moment, it reminded me of you. But she had it once. I have it each day, but not from crying but from happiness! &#x1f498; </span>
           <img
             class="image6"
             v-lazyload

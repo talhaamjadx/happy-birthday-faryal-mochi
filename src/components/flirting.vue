@@ -13,7 +13,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Like jimin is everyone else's mochi. You are my mochi(jootay seenay wala nhi 🤣) </span>
+        <span class="text-over"> Like jimin is everyone else's mochi. You are my mochi(jootay seenay wala nhi &#x1f602;) </span>
         <img
           class="image2"
           v-lazyload
@@ -22,7 +22,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> 💕💕💕💕💕💕 </span>
+        <span class="text-over"> &#x1f49e; &#x1f49e; &#x1f49e; &#x1f49e; &#x1f49e; &#x1f49e; </span>
         <img
           class="image3"
           v-lazyload
@@ -58,7 +58,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> Look at zimal though 😍 </span>
+        <span class="text-over"> Look at zimal though &#x1f60d; </span>
         <img
           class="image7"
           v-lazyload
@@ -76,7 +76,7 @@ import description from "../mixins/description";
 export default {
   data(){
     return{
-      text: `Warning! There is some cheesy stuff coming!
+      text: `Warning! There is some cheesy stuff coming! What more can I say about you. Your eyes are just mesmerizing. You can hypnotize people with them. You know NASA does research on our universe, how big and deep it is, ukwis. And it takes 4 lightyears to reach the nearest star. Which is less than the distance between the lens of your eyes and the retina. Get it? Becuase your eyes are very deep. I realized after writing this that it's probably the lamest thing i've ever said
       `
     }
   },

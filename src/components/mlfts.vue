@@ -121,7 +121,7 @@
         />
       </div>
       <div class="image-container">
-        <span class="text-over"> 💖💖💖💖💖💖 </span>
+        <span class="text-over"> &#x1f498; &#x1f498; &#x1f498; &#x1f498; &#x1f498; &#x1f498; </span>
         <img
           class="image14"
           v-lazyload
